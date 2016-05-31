@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hrU-MH-NdQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flag Quiz-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="Flag_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xNW-Dj-74M">
+                                <rect key="frame" x="178" y="72" width="245" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="2gD-6h-MOM"/>
+                                    <constraint firstAttribute="height" constant="36" id="SKH-y8-PKy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question 1 of 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v7v-XP-dRV">
+                                <rect key="frame" x="178" y="343" width="245" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="C1o-Ih-m7v">
+                                <rect key="frame" x="20" y="395" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Nicaragua"/>
+                                    <segment title="Puerto Rico"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="GPY-Gl-ZIT"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-Lu-MSO">
+                                <rect key="frame" x="20" y="431" width="560" height="29"/>
+                                <segments>
+                                    <segment title="US Virgin Islands"/>
+                                    <segment title="Saint Lucia"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="8OP-hs-qRN"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="kuE-AA-eDF">
+                                <rect key="frame" x="20" y="503" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Guatemala"/>
+                                    <segment title="Saint Pierre"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="zYG-gl-UrD"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bba-1z-mK3">
+                                <rect key="frame" x="178" y="539" width="245" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C2J-2V-Ik8">
+                                <rect key="frame" x="20" y="115" width="560" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="QIo-bO-m2e"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="h44-D6-DNq">
+                                <rect key="frame" x="20" y="467" width="560" height="29"/>
+                                <segments>
+                                    <segment title="St. Vicent and Grenadines"/>
+                                    <segment title="Mexico"/>
+                                </segments>
+                                <connections>
+                                    <action selector="submitGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="jUb-KY-LUo"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eRd-Lu-MSO" firstAttribute="top" secondItem="C1o-Ih-m7v" secondAttribute="bottom" constant="8" symbolic="YES" id="4mx-Hq-lNp"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="trailing" secondItem="eRd-Lu-MSO" secondAttribute="trailing" id="7HV-jm-95P"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="leading" secondItem="eRd-Lu-MSO" secondAttribute="leading" id="8AY-w3-AKh"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="centerX" secondItem="xNW-Dj-74M" secondAttribute="centerX" id="8LG-JS-liN"/>
+                            <constraint firstItem="xNW-Dj-74M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="8VU-hc-sDq"/>
+                            <constraint firstItem="kuE-AA-eDF" firstAttribute="top" secondItem="h44-D6-DNq" secondAttribute="bottom" constant="8" symbolic="YES" id="ExK-VY-3Qv"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="leading" secondItem="h44-D6-DNq" secondAttribute="leading" id="LhO-Qn-Lyc"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="top" secondItem="xNW-Dj-74M" secondAttribute="bottom" constant="7" id="MUa-EN-5NM"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="trailing" secondItem="kuE-AA-eDF" secondAttribute="trailing" id="Qfd-hH-MgG"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WLc-RT-xyz"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="trailing" secondItem="h44-D6-DNq" secondAttribute="trailing" id="Wth-f9-cCD"/>
+                            <constraint firstItem="bba-1z-mK3" firstAttribute="top" secondItem="kuE-AA-eDF" secondAttribute="bottom" constant="8" symbolic="YES" id="cZZ-gb-Bt6"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="leading" secondItem="C1o-Ih-m7v" secondAttribute="leading" id="g6P-2z-AZB"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="leading" secondItem="kuE-AA-eDF" secondAttribute="leading" id="h6e-CY-6ik"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="centerX" secondItem="bba-1z-mK3" secondAttribute="centerX" id="hIq-xl-wYc"/>
+                            <constraint firstItem="C2J-2V-Ik8" firstAttribute="trailing" secondItem="C1o-Ih-m7v" secondAttribute="trailing" id="jJD-Ud-5T7"/>
+                            <constraint firstItem="h44-D6-DNq" firstAttribute="top" secondItem="eRd-Lu-MSO" secondAttribute="bottom" constant="8" symbolic="YES" id="mkD-In-Yym"/>
+                            <constraint firstItem="xNW-Dj-74M" firstAttribute="trailing" secondItem="v7v-XP-dRV" secondAttribute="trailing" id="p9f-O9-9hJ"/>
+                            <constraint firstItem="v7v-XP-dRV" firstAttribute="top" secondItem="C2J-2V-Ik8" secondAttribute="bottom" constant="8" symbolic="YES" id="sxr-3B-xwi"/>
+                            <constraint firstItem="C1o-Ih-m7v" firstAttribute="top" secondItem="v7v-XP-dRV" secondAttribute="bottom" constant="8" symbolic="YES" id="tHq-gh-pLk"/>
+                            <constraint firstItem="xNW-Dj-74M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfc-lY-Zuj"/>
+                            <constraint firstItem="xNW-Dj-74M" firstAttribute="leading" secondItem="v7v-XP-dRV" secondAttribute="leading" id="zSr-3o-bAa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flag Quiz" id="GyL-cF-146">
+                        <barButtonItem key="rightBarButtonItem" title="Setting" id="YKR-CM-IBH">
+                            <connections>
+                                <segue destination="zlQ-Dj-yhv" kind="show" identifier="showSettings" id="NtT-n4-f6h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerLabel" destination="bba-1z-mK3" id="iiJ-1P-Jqy"/>
+                        <outlet property="flagImageView" destination="C2J-2V-Ik8" id="ceg-Yd-wcg"/>
+                        <outlet property="questionNumberLabel" destination="v7v-XP-dRV" id="iYf-4j-2bd"/>
+                        <outletCollection property="segmentedControls" destination="eRd-Lu-MSO" collectionClass="NSMutableArray" id="cpa-R5-IoU"/>
+                        <outletCollection property="segmentedControls" destination="C1o-Ih-m7v" collectionClass="NSMutableArray" id="Fqm-Hp-xDD"/>
+                        <outletCollection property="segmentedControls" destination="h44-D6-DNq" collectionClass="NSMutableArray" id="kNM-gi-8A9"/>
+                        <outletCollection property="segmentedControls" destination="kuE-AA-eDF" collectionClass="NSMutableArray" id="8ht-Rd-1ns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7XN-Z7-biC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hrU-MH-NdQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FjP-HM-v2L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YKn-T1-sX2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxD-hz-hzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="1075"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="x7v-T9-1bV">
+            <objects>
+                <viewController id="zlQ-Dj-yhv" customClass="SettingsViewController" customModule="Flag_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hAE-Cd-J8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXo-XP-nWg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PNy-ck-PBh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of guesses per flag " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD7-Bj-C57">
+                                <rect key="frame" x="192" y="72" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regions to include in the quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi4-PF-BWd">
+                                <rect key="frame" x="188" y="173" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-7K-pPe">
+                                <rect key="frame" x="215" y="202" width="172" height="236"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-uQ-caq">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="236"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Africa" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byl-sZ-zlM">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-j8-q2k">
+                                                <rect key="frame" x="0.0" y="51" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="bUP-nK-y30"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Europe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXc-bF-hK1">
+                                                <rect key="frame" x="0.0" y="92" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="C79-Ow-ljX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="North America" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-R8-1xI">
+                                                <rect key="frame" x="0.0" y="133" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Jf6-I1-m3G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocenia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiS-84-VGf">
+                                                <rect key="frame" x="0.0" y="174" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="GHc-aO-36a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South America" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9N-Ff-knd">
+                                                <rect key="frame" x="0.0" y="215" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="sHf-iB-xTi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RNk-tT-avQ">
+                                        <rect key="frame" x="123" y="0.0" width="49" height="236"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ezj-bn-RJu">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="lxW-an-Xg0"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r2t-L4-0KJ">
+                                                <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="Bxr-jP-PYD"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tug-Kx-Mrh">
+                                                <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="b13-Z5-s8g"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrg-uh-Pcj">
+                                                <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="ZQQ-C3-iRo"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-Xb-f8K">
+                                                <rect key="frame" x="0.0" y="164" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="GRZ-yy-ldR"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJB-DI-Hyw">
+                                                <rect key="frame" x="0.0" y="205" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="jZw-Sr-Neu"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="2N1-jh-JYR">
+                                <rect key="frame" x="195" y="101" width="210" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Byr-gT-vPE"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2" width="50"/>
+                                    <segment title="4" width="50"/>
+                                    <segment title="6" width="50"/>
+                                    <segment title="8" width="50"/>
+                                </segments>
+                                <connections>
+                                    <action selector="numberOfGuessesChanged:" destination="zlQ-Dj-yhv" eventType="valueChanged" id="YK9-uf-lu4"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hi4-PF-BWd" firstAttribute="centerX" secondItem="NTh-7K-pPe" secondAttribute="centerX" id="1kn-bW-Tpd"/>
+                            <constraint firstItem="2N1-jh-JYR" firstAttribute="centerX" secondItem="hi4-PF-BWd" secondAttribute="centerX" id="5bD-cF-gkB"/>
+                            <constraint firstItem="QD7-Bj-C57" firstAttribute="top" secondItem="hAE-Cd-J8S" secondAttribute="bottom" constant="8" symbolic="YES" id="8xZ-sN-wtm"/>
+                            <constraint firstItem="QD7-Bj-C57" firstAttribute="centerX" secondItem="PNy-ck-PBh" secondAttribute="centerX" id="9Nm-YQ-2Ng"/>
+                            <constraint firstItem="hi4-PF-BWd" firstAttribute="top" secondItem="2N1-jh-JYR" secondAttribute="bottom" constant="44" id="HZc-TM-Gia"/>
+                            <constraint firstItem="QD7-Bj-C57" firstAttribute="centerX" secondItem="2N1-jh-JYR" secondAttribute="centerX" id="I4J-aA-3E8"/>
+                            <constraint firstItem="2N1-jh-JYR" firstAttribute="top" secondItem="QD7-Bj-C57" secondAttribute="bottom" constant="8" symbolic="YES" id="NKd-VI-4fX"/>
+                            <constraint firstItem="NTh-7K-pPe" firstAttribute="top" secondItem="hi4-PF-BWd" secondAttribute="bottom" constant="8" symbolic="YES" id="NKy-6C-QsI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guessesSegmentedControl" destination="2N1-jh-JYR" id="Gn2-Yo-hbf"/>
+                        <outletCollection property="switches" destination="ezj-bn-RJu" collectionClass="NSMutableArray" id="J1p-xp-wFu"/>
+                        <outletCollection property="switches" destination="r2t-L4-0KJ" collectionClass="NSMutableArray" id="Ekv-Ey-Sge"/>
+                        <outletCollection property="switches" destination="tug-Kx-Mrh" collectionClass="NSMutableArray" id="Qnc-Y2-paN"/>
+                        <outletCollection property="switches" destination="qrg-uh-Pcj" collectionClass="NSMutableArray" id="4sg-hv-Pmd"/>
+                        <outletCollection property="switches" destination="QXB-Xb-f8K" collectionClass="NSMutableArray" id="Pug-qF-fe5"/>
+                        <outletCollection property="switches" destination="JJB-DI-Hyw" collectionClass="NSMutableArray" id="Wv3-0c-pC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJ0-JV-cU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="455"/>
+        </scene>
+    </scenes>
+</document>
