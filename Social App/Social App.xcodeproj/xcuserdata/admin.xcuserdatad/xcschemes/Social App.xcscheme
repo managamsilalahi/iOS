@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84D4EC751CFD3440007E466D"
+               BlueprintIdentifier = "849F7B4C1CFD7DF8009E6E51"
                BuildableName = "Social App.app"
                BlueprintName = "Social App"
                ReferencedContainer = "container:Social App.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D4EC751CFD3440007E466D"
+            BlueprintIdentifier = "849F7B4C1CFD7DF8009E6E51"
             BuildableName = "Social App.app"
             BlueprintName = "Social App"
             ReferencedContainer = "container:Social App.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D4EC751CFD3440007E466D"
+            BlueprintIdentifier = "849F7B4C1CFD7DF8009E6E51"
             BuildableName = "Social App.app"
             BlueprintName = "Social App"
             ReferencedContainer = "container:Social App.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D4EC751CFD3440007E466D"
+            BlueprintIdentifier = "849F7B4C1CFD7DF8009E6E51"
             BuildableName = "Social App.app"
             BlueprintName = "Social App"
             ReferencedContainer = "container:Social App.xcodeproj">
