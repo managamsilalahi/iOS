@@ -10,6 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set title
+        self.title = "Login"
+        
+        // Hidden nav bar
+        self.navigationController?.navigationBar.hidden = false
+        
+    }
     
     // Register custom view
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -31,7 +41,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didTapFBSSO(sender: UIButton) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(true, forKey: "fbLoggedIn")
+        
+        // Goto Welcome Screen and FBLoggedInTableViewController
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
+    @IBAction func didTapGoogleSSO(sender: UIButton) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(true, forKey: "googleLoggedIn")
+        
+        // Goto Welcome Screen and FBLoggedInTableViewController
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     /*
      // MARK: - Navigation
      

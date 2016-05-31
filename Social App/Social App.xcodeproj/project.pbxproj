@@ -13,6 +13,16 @@
 		849F7B671CFD7E76009E6E51 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B661CFD7E76009E6E51 /* Launch Screen.storyboard */; };
 		849F7B6B1CFD7EC5009E6E51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B691CFD7EC5009E6E51 /* LoginViewController.swift */; };
 		849F7B6C1CFD7EC5009E6E51 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B6A1CFD7EC5009E6E51 /* LoginViewController.xib */; };
+		849F7B7D1CFD827F009E6E51 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849F7B7A1CFD827F009E6E51 /* FBSDKCoreKit.framework */; };
+		849F7B7E1CFD827F009E6E51 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849F7B7B1CFD827F009E6E51 /* FBSDKLoginKit.framework */; };
+		849F7B7F1CFD827F009E6E51 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849F7B7C1CFD827F009E6E51 /* FBSDKShareKit.framework */; };
+		849F7B811CFD856A009E6E51 /* FBLoggedInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B801CFD856A009E6E51 /* FBLoggedInTableViewController.swift */; };
+		849F7B851CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B831CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift */; };
+		849F7B861CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */; };
+		849F7B891CFD8766009E6E51 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */; };
+		849F7B8A1CFD8766009E6E51 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */; };
+		849F7B8E1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B8C1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift */; };
+		849F7B8F1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B8D1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		849F7B661CFD7E76009E6E51 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		849F7B691CFD7EC5009E6E51 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
 		849F7B6A1CFD7EC5009E6E51 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Login/LoginViewController.xib; sourceTree = "<group>"; };
+		849F7B7A1CFD827F009E6E51 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Social App/Frameworks/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		849F7B7B1CFD827F009E6E51 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Social App/Frameworks/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		849F7B7C1CFD827F009E6E51 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Social App/Frameworks/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		849F7B801CFD856A009E6E51 /* FBLoggedInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBLoggedInTableViewController.swift; path = FBLoggedIn/FBLoggedInTableViewController.swift; sourceTree = "<group>"; };
+		849F7B831CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBLoggedInTableViewCell.swift; path = FBLoggedIn/FBLoggedInTableViewCell.swift; sourceTree = "<group>"; };
+		849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FBLoggedInTableViewCell.xib; path = FBLoggedIn/FBLoggedInTableViewCell.xib; sourceTree = "<group>"; };
+		849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeScreenViewController.swift; path = "Welcome Screen/WelcomeScreenViewController.swift"; sourceTree = "<group>"; };
+		849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeScreenViewController.xib; path = "Welcome Screen/WelcomeScreenViewController.xib"; sourceTree = "<group>"; };
+		849F7B8C1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleLoggedInViewController.swift; path = GoogleLoggedIn/GoogleLoggedInViewController.swift; sourceTree = "<group>"; };
+		849F7B8D1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoogleLoggedInViewController.xib; path = GoogleLoggedIn/GoogleLoggedInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F7B7E1CFD827F009E6E51 /* FBSDKLoginKit.framework in Frameworks */,
+				849F7B7D1CFD827F009E6E51 /* FBSDKCoreKit.framework in Frameworks */,
+				849F7B7F1CFD827F009E6E51 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 			children = (
 				849F7B4F1CFD7DF8009E6E51 /* Social App */,
 				849F7B4E1CFD7DF8009E6E51 /* Products */,
+				849F7B731CFD8141009E6E51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +80,10 @@
 		849F7B4F1CFD7DF8009E6E51 /* Social App */ = {
 			isa = PBXGroup;
 			children = (
+				849F7B8B1CFD8769009E6E51 /* Welcome Screen */,
 				849F7B681CFD7EB1009E6E51 /* Login */,
+				849F7B821CFD8570009E6E51 /* FBLoggedIn */,
+				849F7B901CFD8A18009E6E51 /* GoogleLoggedIn */,
 				849F7B651CFD7E56009E6E51 /* Supported Files */,
 			);
 			path = "Social App";
@@ -81,6 +108,44 @@
 				849F7B6A1CFD7EC5009E6E51 /* LoginViewController.xib */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		849F7B731CFD8141009E6E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849F7B7A1CFD827F009E6E51 /* FBSDKCoreKit.framework */,
+				849F7B7B1CFD827F009E6E51 /* FBSDKLoginKit.framework */,
+				849F7B7C1CFD827F009E6E51 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849F7B821CFD8570009E6E51 /* FBLoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				849F7B801CFD856A009E6E51 /* FBLoggedInTableViewController.swift */,
+				849F7B831CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift */,
+				849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */,
+			);
+			name = FBLoggedIn;
+			sourceTree = "<group>";
+		};
+		849F7B8B1CFD8769009E6E51 /* Welcome Screen */ = {
+			isa = PBXGroup;
+			children = (
+				849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */,
+				849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */,
+			);
+			name = "Welcome Screen";
+			sourceTree = "<group>";
+		};
+		849F7B901CFD8A18009E6E51 /* GoogleLoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				849F7B8C1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift */,
+				849F7B8D1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib */,
+			);
+			name = GoogleLoggedIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F7B8A1CFD8766009E6E51 /* WelcomeScreenViewController.xib in Resources */,
+				849F7B861CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib in Resources */,
 				849F7B671CFD7E76009E6E51 /* Launch Screen.storyboard in Resources */,
 				849F7B5B1CFD7DF8009E6E51 /* Assets.xcassets in Resources */,
+				849F7B8F1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib in Resources */,
 				849F7B6C1CFD7EC5009E6E51 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,9 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F7B851CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift in Sources */,
 				849F7B6B1CFD7EC5009E6E51 /* LoginViewController.swift in Sources */,
 				849F7B511CFD7DF8009E6E51 /* AppDelegate.swift in Sources */,
+				849F7B811CFD856A009E6E51 /* FBLoggedInTableViewController.swift in Sources */,
+				849F7B8E1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift in Sources */,
 				849F7B591CFD7DF8009E6E51 /* Social_App.xcdatamodeld in Sources */,
+				849F7B891CFD8766009E6E51 /* WelcomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -241,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -254,7 +326,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Social\\ App/Frameworks",
+					"$(PROJECT_DIR)/Social",
+					App/Frameworks,
+				);
 				INFOPLIST_FILE = "Social App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.managam.SocialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -266,7 +345,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Social\\ App/Frameworks",
+					"$(PROJECT_DIR)/Social",
+					App/Frameworks,
+				);
 				INFOPLIST_FILE = "Social App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.managam.SocialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +378,7 @@
 				849F7B641CFD7DF8009E6E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
