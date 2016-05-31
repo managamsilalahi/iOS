@@ -21,6 +21,12 @@ class GoogleLoggedInViewController: UIViewController {
         // Hidden nav bar
         self.navigationController?.navigationBar.hidden = false
         
+        // Logout color
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        
+        // Nav bar color
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 211.0/255.0, green: 27.0/255.0, blue: 54.0/255.0, alpha: 1.0/0.0)
+        
     }
 
     override func viewDidLoad() {
@@ -37,8 +43,8 @@ class GoogleLoggedInViewController: UIViewController {
             self.previousViewControllerTitle = previousView.navigationItem.title
             
             // Set googleLoggedIn as false
-            let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setBool(false, forKey: "googleLoggedIn")
+            // let defaults = NSUserDefaults.standardUserDefaults()
+            // defaults.setBool(false, forKey: "googleLoggedIn")
             
         }
     }

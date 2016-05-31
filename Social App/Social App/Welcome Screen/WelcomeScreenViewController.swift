@@ -13,9 +13,17 @@ class WelcomeScreenViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Hidden nav bar
-        self.navigationController?.navigationBar.hidden = false
+        // Set title
+        self.title = "Welcome"
         
+        // Nav bar color
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        
+        // White status bar
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 
     override func viewDidLoad() {
@@ -29,31 +37,34 @@ class WelcomeScreenViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // Set title
-        self.title = "Welcome"
-        
+
         let defaults = NSUserDefaults.standardUserDefaults()
         let fbLoggedIn = defaults.boolForKey("fbLoggedIn")
         let googleLoggedIn = defaults.boolForKey("googleLoggedIn")
         
+        print(fbLoggedIn)
+        print(googleLoggedIn)
         
         if fbLoggedIn {
             
             let destinationViewController  = FBLoggedInTableViewController()
             self.navigationController?.pushViewController(destinationViewController, animated: true)
             
+            return
+            
         } else if googleLoggedIn {
             
             let destinationViewController  = GoogleLoggedInViewController()
             self.navigationController?.pushViewController(destinationViewController, animated: true)
             
-        } else {
+            return
             
+        } else {
             let destinationControlelr = LoginViewController()
             self.presentViewController(destinationControlelr, animated: true, completion: nil)
-            
         }
+            
+        
         
     }
 

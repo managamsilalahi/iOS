@@ -21,6 +21,12 @@ class FBLoggedInTableViewController: UITableViewController {
         // Hidden nav bar
         self.navigationController?.navigationBar.hidden = false
         
+        // Logout color
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        
+        // Nav bar color
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 59.0/255.0, green: 89.0/255.0, blue: 152.0/255.0, alpha: 1.0/0.0)
+        
     }
 
     override func viewDidLoad() {
@@ -38,8 +44,8 @@ class FBLoggedInTableViewController: UITableViewController {
         self.previousViewControllerTitle = previousView.navigationItem.title
         
         // Set fbLoggedIn as false
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(false, forKey: "fbLoggedIn")
+        // let defaults = NSUserDefaults.standardUserDefaults()
+        // defaults.setBool(false, forKey: "fbLoggedIn")
         
         // Register custom table view cell
         tableView.registerNib(UINib(nibName: "FBLoggedInTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")

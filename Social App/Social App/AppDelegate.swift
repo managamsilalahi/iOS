@@ -30,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // FBSDK Shared Instance
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        // Set title bar color
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: (UIColor.whiteColor())]
+        
         return true
     }
     

@@ -18,15 +18,18 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="oGu-z0-0Wt">
                     <rect key="frame" x="85" y="209" width="150" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="0Gh-FM-1aq"/>
+                        <constraint firstAttribute="width" constant="150" id="8eH-Aw-SaF"/>
+                        <constraint firstAttribute="height" constant="150" id="QjC-P4-4fo"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="UxJ-pV-bbr"/>
-                <constraint firstAttribute="trailing" secondItem="oGu-z0-0Wt" secondAttribute="trailing" constant="85" id="bKR-st-wVC"/>
-                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zzP-Vi-adQ"/>
+                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0Ev-Yi-Jfg"/>
+                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FqC-GF-Ars"/>
+                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gt7-DT-gb4"/>
+                <constraint firstItem="oGu-z0-0Wt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="h7I-xZ-uaU"/>
+                <constraint firstItem="oGu-z0-0Wt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="lTR-F5-VcT"/>
             </constraints>
             <point key="canvasLocation" x="175" y="493"/>
         </view>

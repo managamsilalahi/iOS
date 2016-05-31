@@ -15,19 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxL-8r-kJj">
-                    <rect key="frame" x="118" y="137" width="85" height="85"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="30c-Vv-WXK">
-                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="85" id="7Wx-M7-UJm"/>
-                        <constraint firstAttribute="width" constant="85" id="YD1-XG-OJg"/>
-                    </constraints>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login with :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3io-ur-lB9">
                     <rect key="frame" x="8" y="230" width="304" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -66,6 +53,19 @@
                         <constraint firstAttribute="height" constant="40" id="kTT-5G-eOy"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxL-8r-kJj">
+                    <rect key="frame" x="118" y="85" width="85" height="85"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="30c-Vv-WXK">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="7Wx-M7-UJm"/>
+                        <constraint firstAttribute="width" constant="85" id="YD1-XG-OJg"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -73,7 +73,7 @@
                 <constraint firstItem="bGI-Ha-dfI" firstAttribute="centerX" secondItem="3io-ur-lB9" secondAttribute="centerX" id="Egz-M6-jbN"/>
                 <constraint firstItem="bGI-Ha-dfI" firstAttribute="centerY" secondItem="nOU-ut-ZWl" secondAttribute="centerY" constant="-5" id="fi3-c4-UbP"/>
                 <constraint firstItem="bGI-Ha-dfI" firstAttribute="centerX" secondItem="nOU-ut-ZWl" secondAttribute="centerX" id="uoi-qV-wUs"/>
-                <constraint firstItem="3io-ur-lB9" firstAttribute="top" secondItem="ZxL-8r-kJj" secondAttribute="bottom" constant="8" symbolic="YES" id="w1w-uK-OQr"/>
+                <constraint firstItem="3io-ur-lB9" firstAttribute="top" secondItem="ZxL-8r-kJj" secondAttribute="bottom" constant="60" id="w1w-uK-OQr"/>
                 <constraint firstItem="bGI-Ha-dfI" firstAttribute="centerX" secondItem="ZxL-8r-kJj" secondAttribute="centerX" id="wnd-gC-5Jt"/>
             </constraints>
             <point key="canvasLocation" x="159" y="286"/>

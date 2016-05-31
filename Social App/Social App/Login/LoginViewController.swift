@@ -7,17 +7,13 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // Set title
-        self.title = "Login"
-        
-        // Hidden nav bar
-        self.navigationController?.navigationBar.hidden = false
         
     }
     
@@ -43,11 +39,24 @@ class LoginViewController: UIViewController {
     
     @IBAction func didTapFBSSO(sender: UIButton) {
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(true, forKey: "fbLoggedIn")
-        
-        // Goto Welcome Screen and FBLoggedInTableViewController
-        self.dismissViewControllerAnimated(true, completion: nil)
+        let loginFB = FBSDKLoginManager()
+        loginFB.logInWithReadPermissions(["public_profile"], fromViewController: self) { (result, error) in
+            
+            if error != nil {
+                print(error.localizedDescription)
+            } else if result.isCancelled {
+                print("Cancelled")
+            } else  {
+                
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setBool(true, forKey: "fbLoggedIn")
+                
+                // Goto Welcome Screen and FBLoggedInTableViewController
+                self.dismissViewControllerAnimated(true, completion: nil)
+                
+            }
+            
+        }
         
     }
     
