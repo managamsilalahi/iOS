@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		842B62B41CD2FAD500C5E4C5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B62B31CD2FAD500C5E4C5 /* GameScene.swift */; };
+		84ABF04C1CD2160900EF38DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF04B1CD2160900EF38DE /* AppDelegate.swift */; };
+		84ABF04E1CD2160900EF38DE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF04D1CD2160900EF38DE /* art.scnassets */; };
+		84ABF0501CD2160900EF38DE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF04F1CD2160900EF38DE /* GameViewController.swift */; };
+		84ABF0531CD2160900EF38DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF0511CD2160900EF38DE /* Main.storyboard */; };
+		84ABF0551CD2160900EF38DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF0541CD2160900EF38DE /* Images.xcassets */; };
+		84ABF0581CD2160900EF38DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF0561CD2160900EF38DE /* LaunchScreen.storyboard */; };
+		84ABF0721CD2186F00EF38DE /* blocker_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF06F1CD2186F00EF38DE /* blocker_hit.wav */; };
+		84ABF0731CD2186F00EF38DE /* cannon_fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF0701CD2186F00EF38DE /* cannon_fire.wav */; };
+		84ABF0741CD2186F00EF38DE /* target_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84ABF0711CD2186F00EF38DE /* target_hit.wav */; };
+		84ABF0771CD218F700EF38DE /* Blocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF0761CD218F700EF38DE /* Blocker.swift */; };
+		84ABF0791CD2190D00EF38DE /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF0781CD2190D00EF38DE /* Target.swift */; };
+		84ABF07B1CD2192500EF38DE /* Cannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF07A1CD2192500EF38DE /* Cannon.swift */; };
+		84ABF07D1CD2193900EF38DE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABF07C1CD2193900EF38DE /* GameOverScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		842B62B31CD2FAD500C5E4C5 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		84ABF0481CD2160800EF38DE /* Cannon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cannon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ABF04B1CD2160900EF38DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84ABF04D1CD2160900EF38DE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		84ABF04F1CD2160900EF38DE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		84ABF0521CD2160900EF38DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84ABF0541CD2160900EF38DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84ABF0571CD2160900EF38DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84ABF0591CD2160900EF38DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ABF06F1CD2186F00EF38DE /* blocker_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blocker_hit.wav; sourceTree = "<group>"; };
+		84ABF0701CD2186F00EF38DE /* cannon_fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cannon_fire.wav; sourceTree = "<group>"; };
+		84ABF0711CD2186F00EF38DE /* target_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = target_hit.wav; sourceTree = "<group>"; };
+		84ABF0761CD218F700EF38DE /* Blocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blocker.swift; sourceTree = "<group>"; };
+		84ABF0781CD2190D00EF38DE /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		84ABF07A1CD2192500EF38DE /* Cannon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cannon.swift; sourceTree = "<group>"; };
+		84ABF07C1CD2193900EF38DE /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84ABF0451CD2160800EF38DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84ABF03F1CD2160800EF38DE = {
+			isa = PBXGroup;
+			children = (
+				84ABF04A1CD2160900EF38DE /* Cannon */,
+				84ABF0491CD2160800EF38DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84ABF0491CD2160800EF38DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84ABF0481CD2160800EF38DE /* Cannon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84ABF04A1CD2160900EF38DE /* Cannon */ = {
+			isa = PBXGroup;
+			children = (
+				84ABF04B1CD2160900EF38DE /* AppDelegate.swift */,
+				84ABF04F1CD2160900EF38DE /* GameViewController.swift */,
+				84ABF0761CD218F700EF38DE /* Blocker.swift */,
+				84ABF0781CD2190D00EF38DE /* Target.swift */,
+				84ABF07A1CD2192500EF38DE /* Cannon.swift */,
+				842B62B31CD2FAD500C5E4C5 /* GameScene.swift */,
+				84ABF07C1CD2193900EF38DE /* GameOverScene.swift */,
+				84ABF0511CD2160900EF38DE /* Main.storyboard */,
+				84ABF06E1CD2186F00EF38DE /* sounds */,
+				84ABF0541CD2160900EF38DE /* Images.xcassets */,
+				84ABF0561CD2160900EF38DE /* LaunchScreen.storyboard */,
+				84ABF0591CD2160900EF38DE /* Info.plist */,
+				84ABF04D1CD2160900EF38DE /* art.scnassets */,
+			);
+			path = Cannon;
+			sourceTree = "<group>";
+		};
+		84ABF06E1CD2186F00EF38DE /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				84ABF06F1CD2186F00EF38DE /* blocker_hit.wav */,
+				84ABF0701CD2186F00EF38DE /* cannon_fire.wav */,
+				84ABF0711CD2186F00EF38DE /* target_hit.wav */,
+			);
+			name = sounds;
+			path = CannonImages/sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84ABF0471CD2160800EF38DE /* Cannon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ABF05C1CD2160900EF38DE /* Build configuration list for PBXNativeTarget "Cannon" */;
+			buildPhases = (
+				84ABF0441CD2160800EF38DE /* Sources */,
+				84ABF0451CD2160800EF38DE /* Frameworks */,
+				84ABF0461CD2160800EF38DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cannon;
+			productName = Cannon;
+			productReference = 84ABF0481CD2160800EF38DE /* Cannon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84ABF0401CD2160800EF38DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Morra;
+				TargetAttributes = {
+					84ABF0471CD2160800EF38DE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 84ABF0431CD2160800EF38DE /* Build configuration list for PBXProject "Cannon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84ABF03F1CD2160800EF38DE;
+			productRefGroup = 84ABF0491CD2160800EF38DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84ABF0471CD2160800EF38DE /* Cannon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84ABF0461CD2160800EF38DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ABF04E1CD2160900EF38DE /* art.scnassets in Resources */,
+				84ABF0581CD2160900EF38DE /* LaunchScreen.storyboard in Resources */,
+				84ABF0741CD2186F00EF38DE /* target_hit.wav in Resources */,
+				84ABF0731CD2186F00EF38DE /* cannon_fire.wav in Resources */,
+				84ABF0551CD2160900EF38DE /* Images.xcassets in Resources */,
+				84ABF0721CD2186F00EF38DE /* blocker_hit.wav in Resources */,
+				84ABF0531CD2160900EF38DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84ABF0441CD2160800EF38DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ABF0501CD2160900EF38DE /* GameViewController.swift in Sources */,
+				84ABF0771CD218F700EF38DE /* Blocker.swift in Sources */,
+				84ABF0791CD2190D00EF38DE /* Target.swift in Sources */,
+				84ABF07B1CD2192500EF38DE /* Cannon.swift in Sources */,
+				84ABF07D1CD2193900EF38DE /* GameOverScene.swift in Sources */,
+				842B62B41CD2FAD500C5E4C5 /* GameScene.swift in Sources */,
+				84ABF04C1CD2160900EF38DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84ABF0511CD2160900EF38DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84ABF0521CD2160900EF38DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84ABF0561CD2160900EF38DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84ABF0571CD2160900EF38DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84ABF05A1CD2160900EF38DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84ABF05B1CD2160900EF38DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84ABF05D1CD2160900EF38DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cannon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.morra.Cannon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84ABF05E1CD2160900EF38DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cannon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.morra.Cannon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84ABF0431CD2160800EF38DE /* Build configuration list for PBXProject "Cannon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ABF05A1CD2160900EF38DE /* Debug */,
+				84ABF05B1CD2160900EF38DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ABF05C1CD2160900EF38DE /* Build configuration list for PBXNativeTarget "Cannon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ABF05D1CD2160900EF38DE /* Debug */,
+				84ABF05E1CD2160900EF38DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84ABF0401CD2160800EF38DE /* Project object */;
+}
