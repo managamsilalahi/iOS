@@ -1,0 +1,10 @@
+PODS:
+  - INSPhotoGallery (1.0.0)
+
+DEPENDENCIES:
+  - INSPhotoGallery
+
+SPEC CHECKSUMS:
+  INSPhotoGallery: b24054d5721bf50b7ce6be682245fc44e0250ad4
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,12 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "85fc8677d30be5bed0d90ef6557c33cc"
+build_time: [516428871, 174221000]
+inputs:
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/ProfileTableViewController.swift": !dirty [515569543, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/GalleryCollectionViewCell.swift": !dirty [515664889, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/VRTourGLKViewController.swift": !dirty [516091796, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/GalleryViewController.swift": !dirty [515673330, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/TabBarController.swift": !dirty [516162002, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/RealEstate.swift": !dirty [515564948, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/MapViewController.swift": !dirty [515569449, 0]
+  "/Users/admin/Documents/Erawan/IOS/Managam/Github Repo/iOS Project/Virtual-Tour/Virtual Tour/Virtual Tour/AppDelegate.swift": !dirty [515666637, 0]
