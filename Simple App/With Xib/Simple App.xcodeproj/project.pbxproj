@@ -19,7 +19,7 @@
 		841E237C1CF44ECC000375C5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841E237B1CF44ECC000375C5 /* SwiftyJSON.framework */; };
 		841E23801CF44F0E000375C5 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E237F1CF44F0E000375C5 /* RestApiManager.swift */; };
 		841E23821CF44F2E000375C5 /* Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E23811CF44F2E000375C5 /* Simple.swift */; };
-		841E23951CF4611B000375C5 /* SimpleAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E23941CF4611B000375C5 /* SimpleAppViewController.swift */; };
+		841E23951CF4611B000375C5 /* SimpleAppTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E23941CF4611B000375C5 /* SimpleAppTableViewController.swift */; };
 		9B5F07D3CF1C671576839DA3 /* Pods_Simple_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0661E80EFD1EE1621EC3113C /* Pods_Simple_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		841E237B1CF44ECC000375C5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/Simple_App-bpjspgucczqmedftzlgxnewuqcwr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		841E237F1CF44F0E000375C5 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		841E23811CF44F2E000375C5 /* Simple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simple.swift; sourceTree = "<group>"; };
-		841E23941CF4611B000375C5 /* SimpleAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAppViewController.swift; sourceTree = "<group>"; };
+		841E23941CF4611B000375C5 /* SimpleAppTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAppTableViewController.swift; sourceTree = "<group>"; };
 		C547F4FFAC0BD811581FFB42 /* Pods-Simple App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple App/Pods-Simple App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +129,7 @@
 		841E23891CF44FF9000375C5 /* Simple App */ = {
 			isa = PBXGroup;
 			children = (
-				841E23941CF4611B000375C5 /* SimpleAppViewController.swift */,
+				841E23941CF4611B000375C5 /* SimpleAppTableViewController.swift */,
 				841AE9621CF5444C00560403 /* SimpleAppTableViewCell.swift */,
 				841AE9631CF5444C00560403 /* SimpleAppTableViewCell.xib */,
 			);
@@ -271,7 +271,7 @@
 			files = (
 				841E23821CF44F2E000375C5 /* Simple.swift in Sources */,
 				841E23681CF44D8D000375C5 /* AppDelegate.swift in Sources */,
-				841E23951CF4611B000375C5 /* SimpleAppViewController.swift in Sources */,
+				841E23951CF4611B000375C5 /* SimpleAppTableViewController.swift in Sources */,
 				841AE9641CF5444C00560403 /* SimpleAppTableViewCell.swift in Sources */,
 				841AE9701CF549B100560403 /* SimpleAppDetailViewController.swift in Sources */,
 				841E23801CF44F0E000375C5 /* RestApiManager.swift in Sources */,
