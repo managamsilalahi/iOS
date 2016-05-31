@@ -1,0 +1,108 @@
+/* Class = "UILabel"; text = "You've dined here. What do you think?"; ObjectID = "2Kt-SW-cb0"; */
+"2Kt-SW-cb0.text" = "Kamu sudah makan malam disini. Apa yang kamu pikirkan?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Tr-2N-LRi"; */
+"3Tr-2N-LRi.normalTitle" = "Tombol";
+
+/* Class = "UILabel"; text = "NAME"; ObjectID = "5Qh-3L-jLU"; */
+"5Qh-3L-jLU.text" = "Nama";
+
+/* Class = "UINavigationItem"; title = "Swiftify"; ObjectID = "6zc-qN-h03"; */
+"6zc-qN-h03.title" = "Swiftify";
+
+/* Class = "UILabel"; text = "You're just a tap away"; ObjectID = "B2p-G4-6Vj"; */
+"B2p-G4-6Vj.text" = "Kamu tekan saja";
+
+/* Class = "UILabel"; text = "Got Question?"; ObjectID = "BBE-Ta-wlP"; */
+"BBE-Ta-wlP.text" = "Ada Pertanyaan?";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "E4O-aP-W2o"; */
+"E4O-aP-W2o.title" = "Peta";
+
+/* Class = "UINavigationItem"; title = "Share Restaurant"; ObjectID = "E6b-gY-ztp"; */
+"E6b-gY-ztp.title" = "Bagikan Restoran";
+
+/* Class = "UITabBarItem"; title = "Feed"; ObjectID = "IEE-FN-5gL"; */
+"IEE-FN-5gL.title" = "Umpan";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "Isl-fb-Tgd"; */
+"Isl-fb-Tgd.normalTitle" = "Tidak";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KZZ-8P-fwb"; */
+"KZZ-8P-fwb.normalTitle" = "Tombol";
+
+/* Class = "UILabel"; text = "Heading"; ObjectID = "Nqs-iY-Gjt"; */
+"Nqs-iY-Gjt.text" = "Judul";
+
+/* Class = "UITextField"; placeholder = "Restaurant Type"; ObjectID = "SNh-UF-JLX"; */
+"SNh-UF-JLX.placeholder" = "Tipe Restoran";
+
+/* Class = "UILabel"; text = "LOCATION"; ObjectID = "Sfu-8U-bJL"; */
+"Sfu-8U-bJL.text" = "Lokasi";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "VKl-m3-7sT"; */
+"VKl-m3-7sT.text" = "Tipe";
+
+/* Class = "UIButton"; normalTitle = "Visit our website"; ObjectID = "Xt7-aV-4OI"; */
+"Xt7-aV-4OI.normalTitle" = "Kunjungi website kami";
+
+/* Class = "UILabel"; text = "Field"; ObjectID = "Yg9-hQ-20E"; */
+"Yg9-hQ-20E.text" = "Field";
+
+/* Class = "UINavigationItem"; title = "Food Pin"; ObjectID = "aaP-Fw-AsL"; */
+"aaP-Fw-AsL.title" = "Food Pin";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bHk-Eh-oH9"; */
+"bHk-Eh-oH9.normalTitle" = "Tombol";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "bYG-bS-hhV"; */
+"bYG-bS-hhV.text" = "Nilai";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "bl1-yY-SbC"; */
+"bl1-yY-SbC.text" = "Nama";
+
+/* Class = "UILabel"; text = "Sub Heading"; ObjectID = "dec-lb-eg0"; */
+"dec-lb-eg0.text" = "Sub Judul";
+
+/* Class = "UILabel"; text = "HAVE YOU BEEN HERE?"; ObjectID = "e22-aZ-WIm"; */
+"e22-aZ-WIm.text" = "Apakah Kamu pernah kemari?";
+
+/* Class = "UINavigationItem"; title = "New Restaurant"; ObjectID = "eID-38-RLG"; */
+"eID-38-RLG.title" = "Restoran Baru";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "exN-Re-gjx"; */
+"exN-Re-gjx.normalTitle" = "Tombol";
+
+/* Class = "UITextField"; placeholder = "Restaurant Location"; ObjectID = "gBy-2U-VVR"; */
+"gBy-2U-VVR.placeholder" = "Lokasi Restoran";
+
+/* Class = "UITextField"; placeholder = "Restaurant Name"; ObjectID = "hpB-5o-dUN"; */
+"hpB-5o-dUN.placeholder" = "Nama Restoran";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "i2n-z3-cGh"; */
+"i2n-z3-cGh.normalTitle" = "Ayo Mulai";
+
+/* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "kif-BN-Ukb"; */
+"kif-BN-Ukb.normalTitle" = "Hubungi Kami";
+
+/* Class = "UINavigationItem"; title = "Feed"; ObjectID = "l4V-mS-dcp"; */
+"l4V-mS-dcp.title" = "Umpan";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "mR9-9S-pTK"; */
+"mR9-9S-pTK.normalTitle" = "Ya";
+
+/* Class = "UIButton"; normalTitle = "Map"; ObjectID = "rSC-Mf-b8z"; */
+"rSC-Mf-b8z.normalTitle" = "Peta";
+
+/* Class = "UIButton"; normalTitle = "Forward"; ObjectID = "vRk-5k-FnF"; */
+"vRk-5k-FnF.normalTitle" = "Selanjutnya";
+
+/* Class = "UILabel"; text = "TYPE"; ObjectID = "vt2-fz-bDY"; */
+"vt2-fz-bDY.text" = "Tipe";
+
+/* Class = "UIViewController"; title = "Web View Controller"; ObjectID = "yK2-dy-hng"; */
+"yK2-dy-hng.title" = "Web View Controller";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "zoJ-XB-wu5"; */
+"zoJ-XB-wu5.title" = "Tentang";
+
