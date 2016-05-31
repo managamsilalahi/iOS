@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoogleLoggedInViewController: UIViewController {
+class GoogleLoggedInViewController: UIViewController, UINavigationControllerDelegate {
     
     var previousViewControllerTitle: String!
     
@@ -42,19 +42,27 @@ class GoogleLoggedInViewController: UIViewController {
             previousView.navigationItem.title = "Logout"
             self.previousViewControllerTitle = previousView.navigationItem.title
             
-            // Set googleLoggedIn as false
-            // let defaults = NSUserDefaults.standardUserDefaults()
-            // defaults.setBool(false, forKey: "googleLoggedIn")
-            
         }
+        
     }
+    
+    override func willMoveToParentViewController(parent: UIViewController?) {
+        
+        if parent == nil {
+            // Set googleLoggedIn as false
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setBool(false, forKey: "googleLoggedIn")
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

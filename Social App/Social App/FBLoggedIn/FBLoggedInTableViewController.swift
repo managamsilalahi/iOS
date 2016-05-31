@@ -50,6 +50,18 @@ class FBLoggedInTableViewController: UITableViewController {
         // Register custom table view cell
         tableView.registerNib(UINib(nibName: "FBLoggedInTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     }
+    
+    
+    override func willMoveToParentViewController(parent: UIViewController?) {
+        
+        if parent == nil {
+            // Set googleLoggedIn as false
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setBool(false, forKey: "fbLoggedIn")
+        }
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
