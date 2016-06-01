@@ -19,8 +19,6 @@
 		849F7B811CFD856A009E6E51 /* FBLoggedInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B801CFD856A009E6E51 /* FBLoggedInTableViewController.swift */; };
 		849F7B851CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B831CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift */; };
 		849F7B861CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */; };
-		849F7B891CFD8766009E6E51 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */; };
-		849F7B8A1CFD8766009E6E51 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */; };
 		849F7B8E1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F7B8C1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift */; };
 		849F7B8F1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F7B8D1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib */; };
 /* End PBXBuildFile section */
@@ -40,8 +38,6 @@
 		849F7B801CFD856A009E6E51 /* FBLoggedInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBLoggedInTableViewController.swift; path = FBLoggedIn/FBLoggedInTableViewController.swift; sourceTree = "<group>"; };
 		849F7B831CFD85B3009E6E51 /* FBLoggedInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBLoggedInTableViewCell.swift; path = FBLoggedIn/FBLoggedInTableViewCell.swift; sourceTree = "<group>"; };
 		849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FBLoggedInTableViewCell.xib; path = FBLoggedIn/FBLoggedInTableViewCell.xib; sourceTree = "<group>"; };
-		849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeScreenViewController.swift; path = "Welcome Screen/WelcomeScreenViewController.swift"; sourceTree = "<group>"; };
-		849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeScreenViewController.xib; path = "Welcome Screen/WelcomeScreenViewController.xib"; sourceTree = "<group>"; };
 		849F7B8C1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleLoggedInViewController.swift; path = GoogleLoggedIn/GoogleLoggedInViewController.swift; sourceTree = "<group>"; };
 		849F7B8D1CFD8A13009E6E51 /* GoogleLoggedInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoogleLoggedInViewController.xib; path = GoogleLoggedIn/GoogleLoggedInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +76,6 @@
 		849F7B4F1CFD7DF8009E6E51 /* Social App */ = {
 			isa = PBXGroup;
 			children = (
-				849F7B8B1CFD8769009E6E51 /* Welcome Screen */,
 				849F7B681CFD7EB1009E6E51 /* Login */,
 				849F7B821CFD8570009E6E51 /* FBLoggedIn */,
 				849F7B901CFD8A18009E6E51 /* GoogleLoggedIn */,
@@ -128,15 +123,6 @@
 				849F7B841CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib */,
 			);
 			name = FBLoggedIn;
-			sourceTree = "<group>";
-		};
-		849F7B8B1CFD8769009E6E51 /* Welcome Screen */ = {
-			isa = PBXGroup;
-			children = (
-				849F7B871CFD8766009E6E51 /* WelcomeScreenViewController.swift */,
-				849F7B881CFD8766009E6E51 /* WelcomeScreenViewController.xib */,
-			);
-			name = "Welcome Screen";
 			sourceTree = "<group>";
 		};
 		849F7B901CFD8A18009E6E51 /* GoogleLoggedIn */ = {
@@ -207,7 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849F7B8A1CFD8766009E6E51 /* WelcomeScreenViewController.xib in Resources */,
 				849F7B861CFD85B3009E6E51 /* FBLoggedInTableViewCell.xib in Resources */,
 				849F7B671CFD7E76009E6E51 /* Launch Screen.storyboard in Resources */,
 				849F7B5B1CFD7DF8009E6E51 /* Assets.xcassets in Resources */,
@@ -229,7 +214,6 @@
 				849F7B811CFD856A009E6E51 /* FBLoggedInTableViewController.swift in Sources */,
 				849F7B8E1CFD8A13009E6E51 /* GoogleLoggedInViewController.swift in Sources */,
 				849F7B591CFD7DF8009E6E51 /* Social_App.xcdatamodeld in Sources */,
-				849F7B891CFD8766009E6E51 /* WelcomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

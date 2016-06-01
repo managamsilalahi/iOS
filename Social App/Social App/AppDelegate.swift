@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.tintColor = UIColor.blackColor()
         
-        let welcomeScreenViewController = WelcomeScreenViewController()
+        let loginViewController = LoginViewController()
         
-        window?.rootViewController = UINavigationController(rootViewController: welcomeScreenViewController)
+        window?.rootViewController = UINavigationController(rootViewController: loginViewController)
         window?.makeKeyAndVisible()
         
         // FBSDK Shared Instance

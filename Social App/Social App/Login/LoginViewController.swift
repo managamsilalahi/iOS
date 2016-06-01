@@ -12,11 +12,6 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
     // Register custom view
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: "LoginViewController", bundle: nil)
@@ -26,10 +21,46 @@ class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set title
+        self.title = "Login"
+        
+        // Hidden nav bar
+        self.navigationController?.navigationBar.hidden = false
+        
+        // Nav bar color
+        self.navigationController?.navigationBar.barTintColor = UIColor.grayColor()
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        // Cek if logged in or not
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let fbLoggedIn = defaults.boolForKey("fbLoggedIn")
+        let googleLoggedIn = defaults.boolForKey("googleLoggedIn")
+        
+        if fbLoggedIn {
+            
+            let destinationViewController  = FBLoggedInTableViewController()
+            self.navigationController?.pushViewController(destinationViewController, animated: true)
+            
+        } else if googleLoggedIn {
+            
+            let destinationViewController  = GoogleLoggedInViewController()
+            self.navigationController?.pushViewController(destinationViewController, animated: true)
+            
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,8 +82,9 @@ class LoginViewController: UIViewController {
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setBool(true, forKey: "fbLoggedIn")
                 
-                // Goto Welcome Screen and FBLoggedInTableViewController
-                self.dismissViewControllerAnimated(true, completion: nil)
+                // Goto FBLoggedInTableViewController
+                let destinationViewController  = FBLoggedInTableViewController()
+                self.navigationController?.pushViewController(destinationViewController, animated: true)
                 
             }
             
@@ -65,8 +97,9 @@ class LoginViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(true, forKey: "googleLoggedIn")
         
-        // Goto Welcome Screen and FBLoggedInTableViewController
-        self.dismissViewControllerAnimated(true, completion: nil)
+        // Goto GoogleLoggedInViewController
+        let destinationViewController  = GoogleLoggedInViewController()
+        self.navigationController?.pushViewController(destinationViewController, animated: true)
         
     }
     /*

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoogleLoggedInViewController: UIViewController, UINavigationControllerDelegate {
+class GoogleLoggedInViewController: UIViewController {
     
     var previousViewControllerTitle: String!
     
