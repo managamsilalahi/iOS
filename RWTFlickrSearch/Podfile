@@ -9,7 +9,7 @@ target 'RWTFlickrSearch' do
   pod 'ReactiveCocoa', '2.1.8'
   pod 'objectiveflickr', '2.0.4'
   pod 'LinqToObjectiveC', '2.0.0'
-  pod 'SDWebImage', '3.6'
+  pod 'SDWebImage', '3.7'
 
   target 'RWTFlickrSearchTests' do
     inherit! :search_paths
