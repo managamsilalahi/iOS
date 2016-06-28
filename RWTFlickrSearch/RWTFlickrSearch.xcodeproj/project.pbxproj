@@ -83,6 +83,8 @@
 		72E401BB192C050F00354806 /* RWTSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsTableViewCell.h; sourceTree = "<group>"; };
 		72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
+		841D521A1D22309A00857311 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
 		913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,8 @@
 		72E401C0192C82C100354806 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */,
+				841D521A1D22309A00857311 /* RWTFlickrSearchViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
