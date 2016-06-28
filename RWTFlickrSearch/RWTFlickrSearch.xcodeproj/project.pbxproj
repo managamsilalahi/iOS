@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149953C716BFE50A2E0E34C8 /* libPods-RWTFlickrSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70168555DDFFB17EF1E3B6F6 /* libPods-RWTFlickrSearch.a */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -30,7 +31,7 @@
 		72E401BA192C03AB00354806 /* RWTSearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401B1192C03AB00354806 /* RWTSearchResultsViewController.xib */; };
 		72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */; };
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
-		A60F282A374641B387052C92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8CB3F8B1184D979703C3ED /* libPods.a */; };
+		858E8246D93892EDC70736D0 /* libPods-RWTFlickrSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F9C9AB84FBC7178506431C8 /* Pods-RWTFlickrSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearchTests/Pods-RWTFlickrSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70168555DDFFB17EF1E3B6F6 /* libPods-RWTFlickrSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWTFlickrSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A0C296D4EFC2A6BD80221F /* Pods-RWTFlickrSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearchTests/Pods-RWTFlickrSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		713DBEFB5A3208752CD322E0 /* Pods-RWTFlickrSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWTFlickrSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
 		728550B3193E52740032A754 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
 		728550B4193E52740032A754 /* CETableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETableViewBindingHelper.m; sourceTree = "<group>"; };
@@ -77,8 +83,7 @@
 		72E401BB192C050F00354806 /* RWTSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsTableViewCell.h; sourceTree = "<group>"; };
 		72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
-		7D8CB3F8B1184D979703C3ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A34888D47890479B80FCDC96 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +94,7 @@
 				72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */,
 				72E40174192BFFCE00354806 /* UIKit.framework in Frameworks */,
 				72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */,
-				A60F282A374641B387052C92 /* libPods.a in Frameworks */,
+				149953C716BFE50A2E0E34C8 /* libPods-RWTFlickrSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,7 @@
 				72E4018F192BFFCE00354806 /* XCTest.framework in Frameworks */,
 				72E40191192BFFCE00354806 /* UIKit.framework in Frameworks */,
 				72E40190192BFFCE00354806 /* Foundation.framework in Frameworks */,
+				858E8246D93892EDC70736D0 /* libPods-RWTFlickrSearchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +129,7 @@
 				72E40194192BFFCE00354806 /* RWTFlickrSearchTests */,
 				72E4016E192BFFCE00354806 /* Frameworks */,
 				72E4016D192BFFCE00354806 /* Products */,
-				A34888D47890479B80FCDC96 /* Pods.xcconfig */,
+				98EB3B6406FBB6B87C9B6F62 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,7 +149,8 @@
 				72E40171192BFFCE00354806 /* CoreGraphics.framework */,
 				72E40173192BFFCE00354806 /* UIKit.framework */,
 				72E4018E192BFFCE00354806 /* XCTest.framework */,
-				7D8CB3F8B1184D979703C3ED /* libPods.a */,
+				70168555DDFFB17EF1E3B6F6 /* libPods-RWTFlickrSearch.a */,
+				7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +234,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		98EB3B6406FBB6B87C9B6F62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				713DBEFB5A3208752CD322E0 /* Pods-RWTFlickrSearch.debug.xcconfig */,
+				913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */,
+				3F9C9AB84FBC7178506431C8 /* Pods-RWTFlickrSearchTests.debug.xcconfig */,
+				70A0C296D4EFC2A6BD80221F /* Pods-RWTFlickrSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,11 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72E4019E192BFFCE00354806 /* Build configuration list for PBXNativeTarget "RWTFlickrSearch" */;
 			buildPhases = (
-				752D8D77EC084BF48FDF1ABA /* Check Pods Manifest.lock */,
+				DAB6F966A42F894372E29E4C /* 📦 Check Pods Manifest.lock */,
 				72E40168192BFFCE00354806 /* Sources */,
 				72E40169192BFFCE00354806 /* Frameworks */,
 				72E4016A192BFFCE00354806 /* Resources */,
-				4B9C8C9081C641A7BD7325E1 /* Copy Pods Resources */,
+				64FAA2E66BCC8983FBB596D7 /* 📦 Embed Pods Frameworks */,
+				2354C94415075DBA02793705 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72E401A1192BFFCE00354806 /* Build configuration list for PBXNativeTarget "RWTFlickrSearchTests" */;
 			buildPhases = (
+				3A58783644076653E68F70F3 /* 📦 Check Pods Manifest.lock */,
 				72E40189192BFFCE00354806 /* Sources */,
 				72E4018A192BFFCE00354806 /* Frameworks */,
 				72E4018B192BFFCE00354806 /* Resources */,
+				F77543993EE6F7DAAC6F81E4 /* 📦 Embed Pods Frameworks */,
+				701FA74C0C941BFFB521338D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,34 +350,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4B9C8C9081C641A7BD7325E1 /* Copy Pods Resources */ = {
+		2354C94415075DBA02793705 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		752D8D77EC084BF48FDF1ABA /* Check Pods Manifest.lock */ = {
+		3A58783644076653E68F70F3 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64FAA2E66BCC8983FBB596D7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		701FA74C0C941BFFB521338D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RWTFlickrSearchTests/Pods-RWTFlickrSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB6F966A42F894372E29E4C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F77543993EE6F7DAAC6F81E4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RWTFlickrSearchTests/Pods-RWTFlickrSearchTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -446,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -479,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -487,13 +569,14 @@
 		};
 		72E4019F192BFFCE00354806 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A34888D47890479B80FCDC96 /* Pods.xcconfig */;
+			baseConfigurationReference = 713DBEFB5A3208752CD322E0 /* Pods-RWTFlickrSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RWTFlickrSearch/RWTFlickrSearch-Prefix.pch";
 				INFOPLIST_FILE = "RWTFlickrSearch/RWTFlickrSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -501,13 +584,14 @@
 		};
 		72E401A0192BFFCE00354806 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A34888D47890479B80FCDC96 /* Pods.xcconfig */;
+			baseConfigurationReference = 913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RWTFlickrSearch/RWTFlickrSearch-Prefix.pch";
 				INFOPLIST_FILE = "RWTFlickrSearch/RWTFlickrSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -515,6 +599,7 @@
 		};
 		72E401A2192BFFCE00354806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9C9AB84FBC7178506431C8 /* Pods-RWTFlickrSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWTFlickrSearch.app/RWTFlickrSearch";
@@ -538,6 +623,7 @@
 		};
 		72E401A3192BFFCE00354806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A0C296D4EFC2A6BD80221F /* Pods-RWTFlickrSearchTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWTFlickrSearch.app/RWTFlickrSearch";
