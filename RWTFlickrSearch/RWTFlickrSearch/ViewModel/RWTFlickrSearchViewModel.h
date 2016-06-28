@@ -7,11 +7,14 @@
 //
 
 #import "ReactiveCocoa/ReactiveCocoa.h"
+#import "RWTViewModelServices.h"
 
 @interface RWTFlickrSearchViewModel : NSObject
 
 @property (strong, nonatomic) NSString *searchText;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) RACCommand *executeSearch;
+
+- (instancetype) initWithService: (id<RWTViewModelServices>) services;
 
 @end

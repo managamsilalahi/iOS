@@ -33,6 +33,8 @@
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
 		841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */; };
 		841D521F1D223F7A00857311 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D521E1D223F7A00857311 /* libReactiveCocoa.a */; };
+		84DBFA801D227EE3006875EE /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFA7C1D227502006875EE /* RWTFlickrSearchImpl.m */; };
+		84DBFA811D227EE3006875EE /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFA7F1D22798F006875EE /* RWTViewModelServicesImpl.m */; };
 		858E8246D93892EDC70736D0 /* libPods-RWTFlickrSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,12 @@
 		841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
 		841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
 		841D521E1D223F7A00857311 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/RWTFlickrSearch-dwttpbgdmcrntagixaqruzgxxemt/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		84DBFA7A1D227359006875EE /* RWTFlickrSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearch.h; sourceTree = "<group>"; };
+		84DBFA7B1D2274BC006875EE /* RWTFlickrSearchImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchImpl.h; sourceTree = "<group>"; };
+		84DBFA7C1D227502006875EE /* RWTFlickrSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchImpl.m; sourceTree = "<group>"; };
+		84DBFA7D1D22762D006875EE /* RWTViewModelServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServices.h; sourceTree = "<group>"; };
+		84DBFA7E1D22794A006875EE /* RWTViewModelServicesImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServicesImpl.h; sourceTree = "<group>"; };
+		84DBFA7F1D22798F006875EE /* RWTViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewModelServicesImpl.m; sourceTree = "<group>"; };
 		913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +240,9 @@
 			children = (
 				841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */,
 				841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */,
+				84DBFA7D1D22762D006875EE /* RWTViewModelServices.h */,
+				84DBFA7E1D22794A006875EE /* RWTViewModelServicesImpl.h */,
+				84DBFA7F1D22798F006875EE /* RWTViewModelServicesImpl.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -239,6 +250,9 @@
 		72E401C1192C82CA00354806 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84DBFA7A1D227359006875EE /* RWTFlickrSearch.h */,
+				84DBFA7B1D2274BC006875EE /* RWTFlickrSearchImpl.h */,
+				84DBFA7C1D227502006875EE /* RWTFlickrSearchImpl.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,6 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DBFA801D227EE3006875EE /* RWTFlickrSearchImpl.m in Sources */,
+				84DBFA811D227EE3006875EE /* RWTViewModelServicesImpl.m in Sources */,
 				841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */,
 				72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */,
 				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
