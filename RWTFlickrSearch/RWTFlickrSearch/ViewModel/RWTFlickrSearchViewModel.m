@@ -6,6 +6,8 @@
 //  Copyright © 2016 Colin Eberhardt. All rights reserved.
 //
 
+#import "RWTFlickrSearchViewModel.h"
+
 @implementation RWTFlickrSearchViewModel
 
 - (instancetype) init {

@@ -12,18 +12,30 @@
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITableView *searchHistoryTable;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
+@property (weak, nonatomic) RWTFlickrSearchViewModel *viewModel;
 
 @end
 
 @implementation RWTFlickrSearchViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.edgesForExtendedLayout = UIRectEdgeNone;
-  
-  self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-  
+    [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self bindViewModel];
+}
+
+- (instancetype) initWithViewModel: (RWTFlickrSearchViewModel *) viewModel {
+    self = [super init];
+    if (self) {
+        _viewModel = viewModel;
+    }
+    return self;
+}
+
+- (void) bindViewModel {
+    self.title = self.viewModel.title;
+    self.searchTextField.text = self.viewModel.searchText;
 }
 
 @end

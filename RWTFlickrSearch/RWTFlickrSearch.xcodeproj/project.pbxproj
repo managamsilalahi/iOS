@@ -31,6 +31,7 @@
 		72E401BA192C03AB00354806 /* RWTSearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401B1192C03AB00354806 /* RWTSearchResultsViewController.xib */; };
 		72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */; };
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
+		841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */; };
 		858E8246D93892EDC70736D0 /* libPods-RWTFlickrSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +85,7 @@
 		72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
-		841D521A1D22309A00857311 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
+		841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
 		913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */,
-				841D521A1D22309A00857311 /* RWTFlickrSearchViewModel.m */,
+				841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -451,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */,
 				72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */,
 				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
 				72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */,
