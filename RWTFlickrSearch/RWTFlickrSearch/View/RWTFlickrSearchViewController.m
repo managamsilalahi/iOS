@@ -42,6 +42,9 @@
     
     //RAC([UIApplication sharedApplication], networkActivityIndicatorVisible) = self.viewModel.executeSearch.executing;
     RAC(self.loadingIndicator, hidden) = [self.viewModel.executeSearch.executing not];
+    [self.viewModel.executeSearch.executionSignals subscribeNext: ^(id x){
+        [self.searchTextField resignFirstResponder];
+    }];
 }
 
 @end
