@@ -6,9 +6,12 @@
 //  Copyright (c) 2016 Colin Eberhardt. All rights reserved.
 //
 
+#import "ReactiveCocoa/ReactiveCocoa.h"
+
 @interface RWTFlickrSearchViewModel : NSObject
 
 @property (strong, nonatomic) NSString *searchText;
 @property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) RACCommand *executeSearch;
 
 @end
