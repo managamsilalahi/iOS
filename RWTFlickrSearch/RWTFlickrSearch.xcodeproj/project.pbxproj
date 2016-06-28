@@ -32,6 +32,7 @@
 		72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */; };
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
 		841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */; };
+		841D521F1D223F7A00857311 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D521E1D223F7A00857311 /* libReactiveCocoa.a */; };
 		858E8246D93892EDC70736D0 /* libPods-RWTFlickrSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178356263DD810A3B9F99ED /* libPods-RWTFlickrSearchTests.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		841D52191D22301700857311 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
 		841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
+		841D521E1D223F7A00857311 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/RWTFlickrSearch-dwttpbgdmcrntagixaqruzgxxemt/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		913AFF0EB163F7D678BED478 /* Pods-RWTFlickrSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWTFlickrSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWTFlickrSearch/Pods-RWTFlickrSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D521F1D223F7A00857311 /* libReactiveCocoa.a in Frameworks */,
 				72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */,
 				72E40174192BFFCE00354806 /* UIKit.framework in Frameworks */,
 				72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */,
@@ -148,6 +151,7 @@
 		72E4016E192BFFCE00354806 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				841D521E1D223F7A00857311 /* libReactiveCocoa.a */,
 				72E4016F192BFFCE00354806 /* Foundation.framework */,
 				72E40171192BFFCE00354806 /* CoreGraphics.framework */,
 				72E40173192BFFCE00354806 /* UIKit.framework */,
