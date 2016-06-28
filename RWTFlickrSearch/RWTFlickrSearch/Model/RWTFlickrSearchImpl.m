@@ -1,5 +1,5 @@
 //
-//  NSObject_RWT.h
+//  RWTFlickrSearchImpl.m
 //  RWTFlickrSearch
 //
 //  Created by Admin on 6/28/16.
