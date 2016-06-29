@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		84655CB51D23D40B0061FFD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84655CB41D23D40B0061FFD9 /* main.m */; };
 		84655CB81D23D40B0061FFD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84655CB71D23D40B0061FFD9 /* AppDelegate.m */; };
-		84655CBB1D23D40B0061FFD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84655CBA1D23D40B0061FFD9 /* ViewController.m */; };
 		84655CBE1D23D40B0061FFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84655CBC1D23D40B0061FFD9 /* Main.storyboard */; };
 		84655CC01D23D40B0061FFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84655CBF1D23D40B0061FFD9 /* Assets.xcassets */; };
 		84655CC31D23D40B0061FFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84655CC11D23D40B0061FFD9 /* LaunchScreen.storyboard */; };
+		84655CCF1D23D8360061FFD9 /* WXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84655CCE1D23D8360061FFD9 /* WXController.m */; };
+		84655CD51D23D8A70061FFD9 /* libHexColors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD01D23D8A70061FFD9 /* libHexColors.a */; };
+		84655CD61D23D8A70061FFD9 /* libLBBlurredImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD11D23D8A70061FFD9 /* libLBBlurredImage.a */; };
+		84655CD71D23D8A70061FFD9 /* libMantle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD21D23D8A70061FFD9 /* libMantle.a */; };
+		84655CD81D23D8A70061FFD9 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD31D23D8A70061FFD9 /* libReactiveCocoa.a */; };
+		84655CD91D23D8A70061FFD9 /* libTSMessages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD41D23D8A70061FFD9 /* libTSMessages.a */; };
 		F14BCDFB2D4E22324BE6D14D /* libPods-SimpleWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E11A20F19A0AB0DF8CA48CD0 /* libPods-SimpleWeather.a */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +26,17 @@
 		84655CB41D23D40B0061FFD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84655CB61D23D40B0061FFD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84655CB71D23D40B0061FFD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84655CB91D23D40B0061FFD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84655CBA1D23D40B0061FFD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84655CBD1D23D40B0061FFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84655CBF1D23D40B0061FFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84655CC21D23D40B0061FFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84655CC41D23D40B0061FFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84655CCD1D23D8360061FFD9 /* WXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXController.h; path = View/WXController.h; sourceTree = "<group>"; };
+		84655CCE1D23D8360061FFD9 /* WXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXController.m; path = View/WXController.m; sourceTree = "<group>"; };
+		84655CD01D23D8A70061FFD9 /* libHexColors.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHexColors.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/HexColors/libHexColors.a"; sourceTree = "<group>"; };
+		84655CD11D23D8A70061FFD9 /* libLBBlurredImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLBBlurredImage.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/LBBlurredImage/libLBBlurredImage.a"; sourceTree = "<group>"; };
+		84655CD21D23D8A70061FFD9 /* libMantle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMantle.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/Mantle/libMantle.a"; sourceTree = "<group>"; };
+		84655CD31D23D8A70061FFD9 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		84655CD41D23D8A70061FFD9 /* libTSMessages.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTSMessages.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/TSMessages/libTSMessages.a"; sourceTree = "<group>"; };
 		8617E7CB1F570E846A17A8BB /* Pods-SimpleWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.release.xcconfig"; sourceTree = "<group>"; };
 		E11A20F19A0AB0DF8CA48CD0 /* libPods-SimpleWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE972D8EA4352099271A408E /* Pods-SimpleWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84655CD51D23D8A70061FFD9 /* libHexColors.a in Frameworks */,
+				84655CD61D23D8A70061FFD9 /* libLBBlurredImage.a in Frameworks */,
+				84655CD71D23D8A70061FFD9 /* libMantle.a in Frameworks */,
+				84655CD81D23D8A70061FFD9 /* libReactiveCocoa.a in Frameworks */,
+				84655CD91D23D8A70061FFD9 /* libTSMessages.a in Frameworks */,
 				F14BCDFB2D4E22324BE6D14D /* libPods-SimpleWeather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +62,11 @@
 		7B907F57FD213CF7D89AD154 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84655CD01D23D8A70061FFD9 /* libHexColors.a */,
+				84655CD11D23D8A70061FFD9 /* libLBBlurredImage.a */,
+				84655CD21D23D8A70061FFD9 /* libMantle.a */,
+				84655CD31D23D8A70061FFD9 /* libReactiveCocoa.a */,
+				84655CD41D23D8A70061FFD9 /* libTSMessages.a */,
 				E11A20F19A0AB0DF8CA48CD0 /* libPods-SimpleWeather.a */,
 			);
 			name = Frameworks;
@@ -73,14 +93,11 @@
 		84655CB21D23D40B0061FFD9 /* SimpleWeather */ = {
 			isa = PBXGroup;
 			children = (
+				84655CCB1D23D7B20061FFD9 /* Model */,
+				84655CCA1D23D7AB0061FFD9 /* View */,
+				84655CCC1D23D7B70061FFD9 /* ViewModel */,
 				84655CB61D23D40B0061FFD9 /* AppDelegate.h */,
 				84655CB71D23D40B0061FFD9 /* AppDelegate.m */,
-				84655CB91D23D40B0061FFD9 /* ViewController.h */,
-				84655CBA1D23D40B0061FFD9 /* ViewController.m */,
-				84655CBC1D23D40B0061FFD9 /* Main.storyboard */,
-				84655CBF1D23D40B0061FFD9 /* Assets.xcassets */,
-				84655CC11D23D40B0061FFD9 /* LaunchScreen.storyboard */,
-				84655CC41D23D40B0061FFD9 /* Info.plist */,
 				84655CB31D23D40B0061FFD9 /* Supporting Files */,
 			);
 			path = SimpleWeather;
@@ -89,9 +106,36 @@
 		84655CB31D23D40B0061FFD9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84655CBF1D23D40B0061FFD9 /* Assets.xcassets */,
+				84655CC11D23D40B0061FFD9 /* LaunchScreen.storyboard */,
+				84655CC41D23D40B0061FFD9 /* Info.plist */,
 				84655CB41D23D40B0061FFD9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84655CCA1D23D7AB0061FFD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84655CCD1D23D8360061FFD9 /* WXController.h */,
+				84655CCE1D23D8360061FFD9 /* WXController.m */,
+				84655CBC1D23D40B0061FFD9 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84655CCB1D23D7B20061FFD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84655CCC1D23D7B70061FFD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		D769BC1ABAACA341C620DE97 /* Pods */ = {
@@ -224,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84655CBB1D23D40B0061FFD9 /* ViewController.m in Sources */,
+				84655CCF1D23D8360061FFD9 /* WXController.m in Sources */,
 				84655CB81D23D40B0061FFD9 /* AppDelegate.m in Sources */,
 				84655CB51D23D40B0061FFD9 /* main.m in Sources */,
 			);

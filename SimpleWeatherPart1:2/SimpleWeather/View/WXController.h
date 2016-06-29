@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WXController.h
 //  SimpleWeather
 //
 //  Created by Admin on 6/29/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WXController : UIViewController
 
 @end
-

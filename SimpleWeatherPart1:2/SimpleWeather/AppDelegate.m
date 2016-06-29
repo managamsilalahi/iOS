@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WXController.h"
+#import <TSMessage.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // 1
+    self.window.rootViewController = [[WXController alloc] init];
+    self.window.backgroundColor = [UIColor redColor];
+    [self.window makeKeyAndVisible];
+    // 2
+    [TSMessage setDefaultViewController:self.window.rootViewController];    
+    
     return YES;
 }
 
