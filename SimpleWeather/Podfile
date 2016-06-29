@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.1'
+
+target 'SimpleWeather' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for SimpleWeather
+  pod 'Mantle'
+  pod 'LBBlurredImage'
+  pod 'TSMessages'
+  pod 'ReactiveCocoa'
+
+end
