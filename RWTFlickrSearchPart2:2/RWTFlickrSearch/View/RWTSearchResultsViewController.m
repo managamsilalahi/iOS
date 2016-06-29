@@ -5,11 +5,13 @@
 
 #import "RWTSearchResultsViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "CETableViewBindingHelper.h"
 
 @interface RWTSearchResultsViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTable;
 @property (strong, nonatomic) RWTSearchResultsViewModel *viewModel;
+@property (strong, nonatomic) CETableViewBindingHelper *bindingHelper;
 
 @end
 
@@ -24,14 +26,15 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    
-    [self.searchResultsTable registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
-    self.searchResultsTable.dataSource = self;
     [self bindViewModel];
+    /*[self.searchResultsTable registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
+    self.searchResultsTable.dataSource = self;*/
 }
 
 - (void) bindViewModel {
     self.title = self.viewModel.title;
+    UINib *nib = [UINib nibWithNibName:@"RWTSearchResultsTableViewCell" bundle:nil];
+    self.bindingHelper = [CETableViewBindingHelper bindingHelperForTableView:self.searchResultsTable sourceSignal:RACObserve(self.viewModel, searchResults) selectionCommand:nil templateCell:nib];
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
