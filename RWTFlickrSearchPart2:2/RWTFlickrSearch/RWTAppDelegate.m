@@ -44,7 +44,8 @@
     RWTFlickrSearchViewController *initWithViewModel = [[RWTFlickrSearchViewController alloc] initWithViewModel:self.viewModel];
     return initWithViewModel;*/
     
-    self.viewModelServices = [RWTViewModelServicesImpl new];
+    //self.viewModelServices = [RWTViewModelServicesImpl new];
+    self.viewModelServices = [[RWTViewModelServicesImpl alloc] initWithNavigationController:self.navigationController];
     self.viewModel = [[RWTFlickrSearchViewModel alloc] initWithService:_viewModelServices];
     RWTFlickrSearchViewController *flickrSearchViewController = [[RWTFlickrSearchViewController alloc]initWithViewModel:self.viewModel];
     
