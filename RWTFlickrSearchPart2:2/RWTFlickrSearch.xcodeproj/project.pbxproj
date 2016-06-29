@@ -34,6 +34,8 @@
 		841D521C1D2237FA00857311 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D521B1D2237AE00857311 /* RWTFlickrSearchViewModel.m */; };
 		841D521F1D223F7A00857311 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 841D521E1D223F7A00857311 /* libReactiveCocoa.a */; };
 		845D250A1D23885700C224D5 /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D25091D2387CA00C224D5 /* RWTSearchResultsViewModel.m */; };
+		845D250D1D23B23300C224D5 /* RWTFlickrPhotoMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D250C1D23B0F600C224D5 /* RWTFlickrPhotoMetadata.m */; };
+		845D25101D23B9D400C224D5 /* RWTSearchResultsItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D250F1D23B94100C224D5 /* RWTSearchResultsItemViewModel.m */; };
 		84DBFA801D227EE3006875EE /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFA7C1D227502006875EE /* RWTFlickrSearchImpl.m */; };
 		84DBFA811D227EE3006875EE /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFA7F1D22798F006875EE /* RWTViewModelServicesImpl.m */; };
 		84DBFA861D2283C7006875EE /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFA831D2282AD006875EE /* RWTFlickrPhoto.m */; };
@@ -95,6 +97,10 @@
 		841D521E1D223F7A00857311 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/RWTFlickrSearch-dwttpbgdmcrntagixaqruzgxxemt/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		845D25081D23872A00C224D5 /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewModel.h; sourceTree = "<group>"; };
 		845D25091D2387CA00C224D5 /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewModel.m; sourceTree = "<group>"; };
+		845D250B1D23B0B100C224D5 /* RWTFlickrPhotoMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhotoMetadata.h; sourceTree = "<group>"; };
+		845D250C1D23B0F600C224D5 /* RWTFlickrPhotoMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhotoMetadata.m; sourceTree = "<group>"; };
+		845D250E1D23B88E00C224D5 /* RWTSearchResultsItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsItemViewModel.h; sourceTree = "<group>"; };
+		845D250F1D23B94100C224D5 /* RWTSearchResultsItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsItemViewModel.m; sourceTree = "<group>"; };
 		84DBFA7A1D227359006875EE /* RWTFlickrSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearch.h; sourceTree = "<group>"; };
 		84DBFA7B1D2274BC006875EE /* RWTFlickrSearchImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchImpl.h; sourceTree = "<group>"; };
 		84DBFA7C1D227502006875EE /* RWTFlickrSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchImpl.m; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 				84DBFA7F1D22798F006875EE /* RWTViewModelServicesImpl.m */,
 				845D25081D23872A00C224D5 /* RWTSearchResultsViewModel.h */,
 				845D25091D2387CA00C224D5 /* RWTSearchResultsViewModel.m */,
+				845D250E1D23B88E00C224D5 /* RWTSearchResultsItemViewModel.h */,
+				845D250F1D23B94100C224D5 /* RWTSearchResultsItemViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -268,6 +276,8 @@
 				84DBFA831D2282AD006875EE /* RWTFlickrPhoto.m */,
 				84DBFA841D228318006875EE /* RWTFlickrSearchResults.h */,
 				84DBFA851D22836E006875EE /* RWTFlickrSearchResults.m */,
+				845D250B1D23B0B100C224D5 /* RWTFlickrPhotoMetadata.h */,
+				845D250C1D23B0F600C224D5 /* RWTFlickrPhotoMetadata.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -485,6 +495,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845D25101D23B9D400C224D5 /* RWTSearchResultsItemViewModel.m in Sources */,
+				845D250D1D23B23300C224D5 /* RWTFlickrPhotoMetadata.m in Sources */,
 				845D250A1D23885700C224D5 /* RWTSearchResultsViewModel.m in Sources */,
 				84DBFA861D2283C7006875EE /* RWTFlickrPhoto.m in Sources */,
 				84DBFA871D2283C7006875EE /* RWTFlickrSearchResults.m in Sources */,
