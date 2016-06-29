@@ -24,8 +24,8 @@
 - (instancetype) init {
     self = [super init];
     if (self) {
-        NSString *OFSampleAppAPIKey = @"9326d3576154fffb2109ba8f833226f1";
-         NSString *OFSampleAppAPISharedSecret = @"d30a01887aba9dc5";
+        NSString *OFSampleAppAPIKey = @"afea67498dd5103b4b5d68233153306c";
+         NSString *OFSampleAppAPISharedSecret = @"a7ec95dd0ec96276";
         _flickrContext = [[OFFlickrAPIContext alloc] initWithAPIKey:OFSampleAppAPIKey sharedSecret:OFSampleAppAPISharedSecret];
         _requests = [NSMutableSet new];
     }
@@ -42,9 +42,9 @@
         
                                RWTFlickrSearchResults *results = [RWTFlickrSearchResults new];
                                results.searchString = searchString;
-                               results.totalResults = [[response valueForKey:@"photos.total"] integerValue];
+                               results.totalResults = [[response valueForKeyPath:@"photos.total"] integerValue];
                                
-                               NSArray *photos = [response valueForKey:@"photos.photo"];
+                               NSArray *photos = [response valueForKeyPath:@"photos.photo"];
                                results.photos = [photos linq_select:^id(NSDictionary *jsonPhoto) {
                                    
                                    RWTFlickrPhoto *photo = [RWTFlickrPhoto new];
