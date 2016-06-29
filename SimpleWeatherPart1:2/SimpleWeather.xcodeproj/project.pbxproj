@@ -18,7 +18,7 @@
 		84655CD71D23D8A70061FFD9 /* libMantle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD21D23D8A70061FFD9 /* libMantle.a */; };
 		84655CD81D23D8A70061FFD9 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD31D23D8A70061FFD9 /* libReactiveCocoa.a */; };
 		84655CD91D23D8A70061FFD9 /* libTSMessages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84655CD41D23D8A70061FFD9 /* libTSMessages.a */; };
-		84655CDD1D23DB950061FFD9 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 84655CDC1D23DB950061FFD9 /* Images */; };
+		84655CE31D23DF860061FFD9 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 84655CE21D23DF860061FFD9 /* Images */; };
 		F14BCDFB2D4E22324BE6D14D /* libPods-SimpleWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E11A20F19A0AB0DF8CA48CD0 /* libPods-SimpleWeather.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		84655CD21D23D8A70061FFD9 /* libMantle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMantle.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/Mantle/libMantle.a"; sourceTree = "<group>"; };
 		84655CD31D23D8A70061FFD9 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		84655CD41D23D8A70061FFD9 /* libTSMessages.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTSMessages.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SimpleWeather-bwqzbwaajssrcoakpmufycywywiy/Build/Products/Debug-iphonesimulator/TSMessages/libTSMessages.a"; sourceTree = "<group>"; };
-		84655CDC1D23DB950061FFD9 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		84655CE21D23DF860061FFD9 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		8617E7CB1F570E846A17A8BB /* Pods-SimpleWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.release.xcconfig"; sourceTree = "<group>"; };
 		E11A20F19A0AB0DF8CA48CD0 /* libPods-SimpleWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE972D8EA4352099271A408E /* Pods-SimpleWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		84655CB31D23D40B0061FFD9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84655CDC1D23DB950061FFD9 /* Images */,
+				84655CE21D23DF860061FFD9 /* Images */,
 				84655CBF1D23D40B0061FFD9 /* Assets.xcassets */,
 				84655CC11D23D40B0061FFD9 /* LaunchScreen.storyboard */,
 				84655CC41D23D40B0061FFD9 /* Info.plist */,
@@ -210,7 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84655CDD1D23DB950061FFD9 /* Images in Resources */,
+				84655CE31D23DF860061FFD9 /* Images in Resources */,
 				84655CC31D23D40B0061FFD9 /* LaunchScreen.storyboard in Resources */,
 				84655CC01D23D40B0061FFD9 /* Assets.xcassets in Resources */,
 				84655CBE1D23D40B0061FFD9 /* Main.storyboard in Resources */,
@@ -386,7 +386,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE972D8EA4352099271A408E /* Pods-SimpleWeather.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -399,7 +398,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8617E7CB1F570E846A17A8BB /* Pods-SimpleWeather.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
