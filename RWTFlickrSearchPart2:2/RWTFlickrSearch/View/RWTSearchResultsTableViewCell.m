@@ -28,4 +28,8 @@
     [self.imageThumbnailView sd_setImageWithURL:photo.url];
 }
 
+- (void) setParallax:(CGFloat) value {
+    self.imageThumbnailView.transform = CGAffineTransformMakeTranslation(0, value);
+}
+
 @end
