@@ -295,6 +295,7 @@
 				TargetAttributes = {
 					84655CAF1D23D40B0061FFD9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PVE2JV95WF;
 					};
 				};
 			};
@@ -526,11 +527,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE972D8EA4352099271A408E /* Pods-SimpleWeather.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.managam.SimpleWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -538,11 +542,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8617E7CB1F570E846A17A8BB /* Pods-SimpleWeather.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleWeather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.managam.SimpleWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
