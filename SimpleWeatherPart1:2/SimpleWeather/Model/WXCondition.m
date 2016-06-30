@@ -18,24 +18,24 @@
     if (! _imageMap) {
         // 2
         _imageMap = @{
-                      @"01d" : @"Images/Weather Icons/weather-clear",
-                      @"02d" : @"Images/Weather Icons/weather-few",
-                      @"03d" : @"Images/Weather Icons/weather-few",
-                      @"04d" : @"Images/Weather Icons/weather-broken",
-                      @"09d" : @"Images/Weather Icons/weather-shower",
-                      @"10d" : @"Images/Weather Icons/weather-rain",
-                      @"11d" : @"Images/Weather Icons/weather-tstorm",
-                      @"13d" : @"Images/Weather Icons/weather-snow",
-                      @"50d" : @"Images/Weather Icons/weather-mist",
-                      @"01n" : @"Images/Weather Icons/weather-moon",
-                      @"02n" : @"Images/Weather Icons/weather-few-night",
-                      @"03n" : @"Images/Weather Icons/weather-few-night",
-                      @"04n" : @"Images/Weather Icons/weather-broken",
-                      @"09n" : @"Images/Weather Icons/weather-shower",
-                      @"10n" : @"Images/Weather Icons/weather-rain-night",
-                      @"11n" : @"Images/Weather Icons/weather-tstorm",
-                      @"13n" : @"Images/Weather Icons/weather-snow",
-                      @"50n" : @"Images/Weather Icons/weather-mist"
+                      @"01d" : @"weather-clear",
+                      @"02d" : @"weather-few",
+                      @"03d" : @"weather-few",
+                      @"04d" : @"weather-broken",
+                      @"09d" : @"weather-shower",
+                      @"10d" : @"weather-rain",
+                      @"11d" : @"weather-tstorm",
+                      @"13d" : @"weather-snow",
+                      @"50d" : @"weather-mist",
+                      @"01n" : @"weather-moon",
+                      @"02n" : @"weather-few-night",
+                      @"03n" : @"weather-few-night",
+                      @"04n" : @"weather-broken",
+                      @"09n" : @"weather-shower",
+                      @"10n" : @"weather-rain-night",
+                      @"11n" : @"weather-tstorm",
+                      @"13n" : @"weather-snow",
+                      @"50n" : @"weather-mist",
                       };
     }
     return _imageMap;

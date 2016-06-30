@@ -67,7 +67,7 @@
 
 - (RACSignal *) fetchCurrentConditionsForLocation:(CLLocationCoordinate2D)coordinate {
     // 1
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial", coordinate.latitude, coordinate.longitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=imperial&appid=017b9116aff7a917561e4c0123600fe0", coordinate.latitude, coordinate.longitude];
     NSURL *url = [NSURL URLWithString:urlString];
     
     // 2
@@ -78,7 +78,7 @@
 }
 
 - (RACSignal *) fetchHourlyForecastForLocation:(CLLocationCoordinate2D)coordinate {
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast?lat=%f&lon=%f&units=imperial&cnt=12", coordinate.latitude, coordinate.longitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast?lat=%f&lon=%f&units=imperial&cnt=12&appid=017b9116aff7a917561e4c0123600fe0", coordinate.latitude, coordinate.longitude];
     NSURL *url = [NSURL URLWithString:urlString];
     
     // 1
@@ -96,7 +96,7 @@
 }
 
 - (RACSignal *) fetchDailyForecastForLocation:(CLLocationCoordinate2D)coordinate {
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&units=imperial&cnt=7", coordinate.latitude, coordinate.longitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/forecast/daily?lat=%f&lon=%f&units=imperial&cnt=7&appid=017b9116aff7a917561e4c0123600fe0", coordinate.latitude, coordinate.longitude];
     NSURL *url = [NSURL URLWithString:urlString];
     
     // Use the generic fetch method and map results to convert into an array of Mantle objects
