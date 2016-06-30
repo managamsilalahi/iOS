@@ -6,9 +6,9 @@ target 'SimpleWeather' do
   # use_frameworks!
 
   # Pods for SimpleWeather
-  pod 'Mantle'
-  pod 'LBBlurredImage'
-  pod 'TSMessages'
-  pod 'ReactiveCocoa'
+  pod 'Mantle', '1.3.1'
+  pod 'LBBlurredImage', '0.1.0'
+  pod 'TSMessages', '0.9.4'
+  pod 'ReactiveCocoa', '2.1.6'
 
 end
