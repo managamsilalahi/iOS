@@ -1,0 +1,1 @@
+../../../STXDynamicTableView/STXDynamicTableView/Cells/STXCommentCell.h

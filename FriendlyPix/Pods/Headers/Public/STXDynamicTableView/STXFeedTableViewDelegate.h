@@ -1,0 +1,1 @@
+../../../STXDynamicTableView/STXDynamicTableView/Protocols/STXFeedTableViewDelegate.h
