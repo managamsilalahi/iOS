@@ -27,6 +27,7 @@
     // Add window frame to the window and makes it's root view controller as UIViewController
     self.window = theWindow;
     self.window.rootViewController = [[UIViewController alloc] init];
+    [self.window makeKeyAndVisible];
 
     // Define the frame rectangles of the three UI elements
     // CGRectMake() creates a CGRect from (x, y, width, height)
@@ -62,7 +63,6 @@
     
     // Finalize the window and put it on screen
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     
     return YES;
 }
