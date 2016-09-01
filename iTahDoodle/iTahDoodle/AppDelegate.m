@@ -23,8 +23,11 @@
     // A CGRect is a struct with an origin (x, y) and size (width, height)
     CGRect winFrame = [[UIScreen mainScreen] bounds];
     UIWindow *theWindow = [[UIWindow alloc] initWithFrame:winFrame];
-    self.window = theWindow;
     
+    // Add window frame to the window and makes it's root view controller as UIViewController
+    self.window = theWindow;
+    self.window.rootViewController = [[UIViewController alloc] init];
+
     // Define the frame rectangles of the three UI elements
     // CGRectMake() creates a CGRect from (x, y, width, height)
     CGRect tableFrame = CGRectMake(0, 80, winFrame.size.width, winFrame.size.height - 100);
