@@ -12,6 +12,13 @@
 
 @end
 
+// Helper function to fetch the path to our to-do data stored on disk”
+NSString *DocPath()
+{
+    NSArray *pathList = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [pathList[0] stringByAppendingPathComponent:@"data.td"];
+}
+
 @implementation AppDelegate
 
 #pragma mark - Application delegate callbacks
@@ -20,7 +27,17 @@
     // Override point for customization after application launch.
     
     // Create an empty array to get us started
-    self.tasks = [[NSMutableArray alloc] init];
+    // self.tasks = [[NSMutableArray alloc] init];
+    
+    // Load an existing data set or create new one
+    NSArray *plist = [NSArray arrayWithContentsOfFile:DocPath()];
+    if (plist) {
+        // We have dataset, copy it to task
+        self.tasks = [plist mutableCopy];
+    } else {
+        // There is no dataset, create an empty array
+        self.tasks = [[NSMutableArray alloc] init];
+    }
     
     // Create and configure the UIWindow instance
     // A CGRect is a struct with an origin (x, y) and size (width, height)
@@ -86,6 +103,11 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // Save our tasks array to disk
+    // [self.tasks writeToFile:DocPath()
+    //              atomically:YES];
+    [self writeToFile];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -98,6 +120,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self writeToFile];
 }
 
 #pragma mark - Actions
@@ -151,4 +174,10 @@
     return cell;
 }
 
+#pragma mark - Tasks writes to file
+- (void) writeToFile
+{
+     [self.tasks writeToFile:DocPath()
+                  atomically:YES];
+}
 @end
