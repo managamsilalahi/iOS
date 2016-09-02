@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // Create an empty array to get us started
+    self.tasks = [[NSMutableArray alloc] init];
+    
     // Create and configure the UIWindow instance
     // A CGRect is a struct with an origin (x, y) and size (width, height)
     CGRect winFrame = [[UIScreen mainScreen] bounds];
@@ -38,6 +41,9 @@
     // Create and configure UITableView instance
     self.taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
     self.taskTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // Make the AppDelegate the table view's data source
+    self.taskTable.dataSource = self;
     
     // Tell the table view which class to instantiate whenever it create a new cell
     [self.taskTable registerClass:[UITableViewCell class]
@@ -104,12 +110,45 @@
     }
     
     // Log text to console
-    NSLog(@"Text entered: %@", text);
+    // NSLog(@"Text entered: %@", text);
+    
+    // Add it to the working array
+    [self.tasks addObject:text];
+    
+    // Refresh the table so that the new item shows up
+    [self.taskTable reloadData];
     
     // Clear out the text field
     [self.taskField setText:@""];
     // Dismiss the keyboard
     [self.taskField resignFirstResponder];
+}
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    // Because this table view only has one section,
+    // the number of rows in it is equal to the number
+    // of items in the tasks array
+    return [self.tasks count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // To improve performance, this method first checks
+    // for an existing cell object that we can reuse
+    // If there isn't one, then a new cell is created
+    UITableViewCell *cell = [self.taskTable dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    // Then we (re)configure the cell based on the model object,
+    // in this case the tasks array, ...”
+    NSString *item = [self.tasks objectAtIndex:indexPath.row];
+    cell.textLabel.text = item;
+    
+    // ... and hand the properly configured cell back to the table view
+    return cell;
 }
 
 @end
