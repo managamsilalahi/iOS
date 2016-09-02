@@ -56,6 +56,11 @@
     [self.insertButton setTitle:@"Insert"
                        forState:UIControlStateNormal];
     
+    // Set the target and action for the Insert button
+    [self.insertButton addTarget:self
+                          action:@selector(addTask:)
+                forControlEvents:UIControlEventTouchUpInside];
+    
     // Add our three UI elements to the window
     [self.window addSubview:self.taskTable];
     [self.window addSubview:self.taskField];
@@ -87,6 +92,24 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Actions
+- (void)addTask:(id)sender
+{
+    // Get the task
+    NSString *text = self.taskField.text;
+    if (text.length == 0) {
+        return;
+    }
+    
+    // Log text to console
+    NSLog(@"Text entered: %@", text);
+    
+    // Clear out the text field
+    [self.taskField setText:@""];
+    // Dismiss the keyboard
+    [self.taskField resignFirstResponder];
 }
 
 @end
