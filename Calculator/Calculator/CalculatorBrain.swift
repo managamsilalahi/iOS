@@ -23,14 +23,19 @@ class CalculatorBrain {
     var operations: Dictionary<String, Operation> = [
         "π" : Operation.Constant(M_PI), //M_PI,
         "e" : Operation.Constant(M_E), //M_E,
+        "±" : Operation.UnaryOperation({ -$0 }),
         "√" : Operation.UnaryOperation(sqrt), //sqrt,
         "cos" : Operation.UnaryOperation(cos), //cos
-        "x" : Operation.BinaryOperation(multiply)
+        "×" : Operation.BinaryOperation({ $0 * $1 }),
+        "÷" : Operation.BinaryOperation({ $0 / $1 }),
+        "+" : Operation.BinaryOperation({ $0 + $1 }),
+        "−" : Operation.BinaryOperation({ $0 - $1 }),
+        "=" : Operation.Equals
     ]
     
     enum Operation {
         case Constant(Double)
-        case UnaryOperation(Double -> Double)
+        case UnaryOperation((Double) -> Double)
         case BinaryOperation((Double, Double) -> Double)
         case Equals
     }
@@ -45,14 +50,24 @@ class CalculatorBrain {
                 accumulator = foo(accumulator)
                 break
             case .BinaryOperation(let foo):
+                executePendingBinaryOperation()
+                pending = PendingBinaryOperationInfo(binaryFunction: foo, firstOperand: accumulator)
                 break
             case .Equals:
-                break
-            default:
+                executePendingBinaryOperation()
                 break
             }
         }
     }
+    
+    private func executePendingBinaryOperation() {
+        if pending != nil {
+            accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator)
+            pending = nil
+        }
+    }
+    
+    private var pending: PendingBinaryOperationInfo?
     
     struct PendingBinaryOperationInfo {
         var binaryFunction: (Double, Double) -> Double
