@@ -12,6 +12,7 @@
 		5B5325E81D7EFB200054B45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5325E61D7EFB200054B45C /* Main.storyboard */; };
 		5B5325EA1D7EFB200054B45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5325E91D7EFB200054B45C /* Assets.xcassets */; };
 		5B5325ED1D7EFB200054B45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5325EB1D7EFB200054B45C /* LaunchScreen.storyboard */; };
+		5BAC088E1D82FDE900EABA46 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC088D1D82FDE900EABA46 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5B5325E91D7EFB200054B45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5325EC1D7EFB200054B45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5325EE1D7EFB200054B45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAC088D1D82FDE900EABA46 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		5B5325E11D7EFB200054B45C /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				5BAC088D1D82FDE900EABA46 /* CalculatorBrain.swift */,
 				5B5325E41D7EFB200054B45C /* ViewController.swift */,
 				5B5325E61D7EFB200054B45C /* Main.storyboard */,
 				5B5325F41D7EFCB50054B45C /* Supporting Files */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAC088E1D82FDE900EABA46 /* CalculatorBrain.swift in Sources */,
 				5B5325E51D7EFB200054B45C /* ViewController.swift in Sources */,
 				5B5325E31D7EFB200054B45C /* AppDelegate.swift in Sources */,
 			);
@@ -294,6 +298,7 @@
 				5B5325F31D7EFB200054B45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
