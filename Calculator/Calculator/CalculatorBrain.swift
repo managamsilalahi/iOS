@@ -10,17 +10,26 @@ import Foundation
 
 class CalculatorBrain {
     
-    func setOperand(operang: Double) {
-        
+    private var accumulator = 0.0
+    
+    func setOperand(operand: Double) {
+        accumulator = operand
     }
     
+    var operations: Dictionary<String, Double> = [
+        "π" : M_PI,
+        "e" : M_E
+    ]
+    
     func performOperation(symbol: String) {
-        
+        if let constant = operations[symbol] {
+            accumulator = constant
+        }
     }
     
     var result: Double {
         get {
-            return 0.0
+            return accumulator
         }
     }
     
