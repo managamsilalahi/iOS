@@ -18,8 +18,17 @@ class CalculatorBrain {
     
     var operations: Dictionary<String, Double> = [
         "π" : M_PI,
-        "e" : M_E
+        "e" : M_E,
+        "√" : sqrt,
+        "cos" : cos
     ]
+    
+    enum Operation {
+        case Constant
+        case UnaryOperation
+        case BinaryOperation
+        case Equals
+    }
     
     func performOperation(symbol: String) {
         if let constant = operations[symbol] {
