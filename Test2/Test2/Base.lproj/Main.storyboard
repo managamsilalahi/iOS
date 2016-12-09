@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-fN-P3A">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iew-Ng-qnh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbS-di-L2v">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="FUD-wt-4mT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-Ea-sSD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JoU-0O-0S3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gm-QC-WaQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Gm-QC-WaQ" secondAttribute="bottom" constant="89" id="0az-kl-KVX"/>
+                            <constraint firstItem="pD7-Ea-sSD" firstAttribute="top" secondItem="nbS-di-L2v" secondAttribute="bottom" constant="8" symbolic="YES" id="1iv-wx-ZkQ"/>
+                            <constraint firstItem="pD7-Ea-sSD" firstAttribute="leading" secondItem="8Gm-QC-WaQ" secondAttribute="leading" id="4bp-fN-FuO"/>
+                            <constraint firstItem="nbS-di-L2v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q4X-iq-yWb"/>
+                            <constraint firstItem="nbS-di-L2v" firstAttribute="top" secondItem="dcv-fN-P3A" secondAttribute="bottom" constant="8" symbolic="YES" id="Z86-4e-8dk"/>
+                            <constraint firstItem="dcv-fN-P3A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="amo-Qb-RtG"/>
+                            <constraint firstItem="nbS-di-L2v" firstAttribute="trailing" secondItem="8Gm-QC-WaQ" secondAttribute="trailing" id="c2W-5m-R3p"/>
+                            <constraint firstItem="8Gm-QC-WaQ" firstAttribute="top" secondItem="pD7-Ea-sSD" secondAttribute="bottom" constant="8" symbolic="YES" id="hJg-RP-gSQ"/>
+                            <constraint firstItem="dcv-fN-P3A" firstAttribute="leading" secondItem="nbS-di-L2v" secondAttribute="leading" id="kbA-ad-3mw"/>
+                            <constraint firstItem="dcv-fN-P3A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ord-SD-yB5"/>
+                            <constraint firstItem="nbS-di-L2v" firstAttribute="leading" secondItem="pD7-Ea-sSD" secondAttribute="leading" id="s4h-RL-MAF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="after" destination="8Gm-QC-WaQ" id="gSi-x1-A0Z"/>
+                        <outlet property="before" destination="nbS-di-L2v" id="40P-Ey-ykP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
