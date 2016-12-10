@@ -8,9 +8,8 @@
 
 import UIKit
 
-@objc
 protocol SidePanelViewControllerDelegate {
-  func animalSelected(animal: Animal)
+  func animalSelected(_ animal: Animal)
 }
 
 class SidePanelViewController: UIViewController {
@@ -37,16 +36,16 @@ class SidePanelViewController: UIViewController {
 
 extension SidePanelViewController: UITableViewDataSource {
   
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
   
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return animals.count
   }
   
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.AnimalCell, forIndexPath: indexPath) as! AnimalCell
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.AnimalCell, for: indexPath) as! AnimalCell
     cell.configureForAnimal(animals[indexPath.row])
     return cell
   }
@@ -57,7 +56,7 @@ extension SidePanelViewController: UITableViewDataSource {
 
 extension SidePanelViewController: UITableViewDelegate {
 
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
   }
   
 }
@@ -68,7 +67,7 @@ class AnimalCell: UITableViewCell {
   @IBOutlet weak var imageNameLabel: UILabel!
   @IBOutlet weak var imageCreatorLabel: UILabel!
   
-  func configureForAnimal(animal: Animal) {
+  func configureForAnimal(_ animal: Animal) {
     animalImageView.image = animal.image
     imageNameLabel.text = animal.title
     imageCreatorLabel.text = animal.creator

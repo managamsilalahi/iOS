@@ -263,9 +263,11 @@
 				TargetAttributes = {
 					17C4DFC9198E428000E0B395 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 					};
 					17C4DFDB198E428000E0B395 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 						TestTargetID = 17C4DFC9198E428000E0B395;
 					};
 				};
@@ -460,6 +462,7 @@
 				INFOPLIST_FILE = "SlideOutNavigation/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -471,6 +474,7 @@
 				INFOPLIST_FILE = "SlideOutNavigation/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -489,6 +493,7 @@
 				INFOPLIST_FILE = "SlideOutNavigationTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -504,6 +509,7 @@
 				INFOPLIST_FILE = "SlideOutNavigationTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;

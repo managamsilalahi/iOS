@@ -10,25 +10,27 @@ import UIKit
 
 @objc
 protocol CenterViewControllerDelegate {
-  optional func toggleLeftPanel()
-  optional func toggleRightPanel()
-  optional func collapseSidePanels()
+  @objc optional func toggleLeftPanel()
+  @objc optional func toggleRightPanel()
+  @objc optional func collapseSidePanels()
 }
 
 class CenterViewController: UIViewController {
   
-  @IBOutlet weak private var imageView: UIImageView!
-  @IBOutlet weak private var titleLabel: UILabel!
-  @IBOutlet weak private var creatorLabel: UILabel!
+  @IBOutlet weak fileprivate var imageView: UIImageView!
+  @IBOutlet weak fileprivate var titleLabel: UILabel!
+  @IBOutlet weak fileprivate var creatorLabel: UILabel!
   
   var delegate: CenterViewControllerDelegate?
   
   // MARK: Button actions
   
-  @IBAction func kittiesTapped(sender: AnyObject) {
+  @IBAction func kittiesTapped(_ sender: AnyObject) {
+    delegate?.toggleLeftPanel?()
   }
   
-  @IBAction func puppiesTapped(sender: AnyObject) {
+  @IBAction func puppiesTapped(_ sender: AnyObject) {
+    delegate?.toggleRightPanel?()
   }
   
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc
+
 class Animal {
   
   let title: String
