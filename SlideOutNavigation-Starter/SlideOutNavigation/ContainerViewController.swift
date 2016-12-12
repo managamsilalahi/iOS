@@ -36,8 +36,46 @@ class ContainerViewController: UIViewController {
         addChildViewController(centerNavigationController)
         
         centerNavigationController.didMove(toParentViewController: self)
+        
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ContainerViewController.handlePanGesture(recognizer:)))
+        centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
     }
     
+}
+
+extension ContainerViewController: UIGestureRecognizerDelegate {
+    // MARK: Gesture recognizer
+    
+    func handlePanGesture(recognizer: UIPanGestureRecognizer) {
+        let gestureIsDraggingFromLeftToRight = (recognizer.velocity(in: view).x > 0)
+        
+        switch(recognizer.state) {
+        case .began:
+            if (currentState == .BothCollapsed) {
+                if (gestureIsDraggingFromLeftToRight) {
+                    addLeftPanelViewController()
+                } else {
+                    addRightPanelViewController()
+                }
+                
+                showShadowForCenterViewController(shouldShowShadow: true)
+            }
+        case .changed:
+            recognizer.view!.center.x = recognizer.view!.center.x + recognizer.translation(in: view).x
+            recognizer.setTranslation(CGPoint.zero, in: view)
+        case .ended:
+            if (leftViewController != nil) {
+                // animate the side panel open or closed based on whether the view has moved more or less than halfway
+                let hasMovedGreaterThanHalfway = recognizer.view!.center.x > view.bounds.size.width
+                animateLeftPanel(shouldExpand: hasMovedGreaterThanHalfway)
+            } else if (rightViewController != nil) {
+                let hasMovedGreaterThanHalfway = recognizer.view!.center.x < 0
+                animateRightPanel(shouldExpand: hasMovedGreaterThanHalfway)
+            }
+        default:
+            break
+        }
+    }
 }
 
 private extension UIStoryboard {
@@ -71,9 +109,11 @@ extension ContainerViewController: CenterViewControllerDelegate {
     }
     
     func addLeftPanelViewController() {
+        toggleLeftPanel()
     }
     
     func addRightPanelViewController() {
+        toggleRightPanel()
     }
     
     func collapseSidePanels() {
