@@ -34,3 +34,13 @@ class CenterViewController: UIViewController {
   }
   
 }
+
+extension CenterViewController: SidePanelViewControllerDelegate {
+    func animalSelected(_ animal: Animal) {
+        imageView.image = animal.image
+        titleLabel.text = animal.title
+        creatorLabel.text = animal.creator
+        
+        delegate?.collapseSidePanels!()
+    }
+}

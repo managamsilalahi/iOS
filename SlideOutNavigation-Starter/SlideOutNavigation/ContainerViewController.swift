@@ -77,6 +77,14 @@ extension ContainerViewController: CenterViewControllerDelegate {
     }
     
     func collapseSidePanels() {
+        switch currentState {
+        case .RightPanelExpanded:
+            toggleRightPanel()
+        case .LeftPanelExpanded:
+            toggleLeftPanel()
+        default:
+            break
+        }
     }
     
     func animateLeftPanel(shouldExpand: Bool) {
@@ -124,6 +132,7 @@ extension ContainerViewController: CenterViewControllerDelegate {
     }
     
     func addChildSidePanelController(sidePanelController: SidePanelViewController) {
+        sidePanelController.delegate = centerViewController
         view.insertSubview(sidePanelController.view, at: 0)
         view.backgroundColor = UIColor.white
         
