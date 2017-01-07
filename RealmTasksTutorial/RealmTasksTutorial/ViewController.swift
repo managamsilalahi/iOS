@@ -10,5 +10,15 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupUI()
+    }
+    
+    func setupUI() {
+        title = "My Tasks"
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
 }
 
