@@ -12,6 +12,8 @@ import RealmSwift
 class ViewController: UITableViewController {
     
     var items = List<Task>()
+    var notificationToken: NotificationToken!
+    var realm: Realm!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,12 @@ class ViewController: UITableViewController {
         title = "My Tasks"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTask))
+    }
+    
+    func setupRealm() {
+        // Log in existing user with username and password
+        let username = "test"
+        let password = "test"
     }
     
     func addTask() {
@@ -40,6 +48,10 @@ class ViewController: UITableViewController {
         }))
         
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    deinit {
+        NotificationToken.stop(self)
     }
     
     func setupFirstTask() {
