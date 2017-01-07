@@ -16,12 +16,30 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-        self.setupFirstTask()
+        // self.setupFirstTask()
     }
     
     func setupUI() {
         title = "My Tasks"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTask))
+    }
+    
+    func addTask() {
+        let alertController = UIAlertController(title: "New Task", message: "Enter Task Name", preferredStyle: .alert)
+        var alertTextField: UITextField!
+        
+        alertController.addTextField { (textField) in
+            alertTextField = textField
+            textField.placeholder = "Task Name"
+        }
+        alertController.addAction(UIAlertAction(title: "Add", style: .default, handler: { (_) in
+            guard let text = alertTextField.text, !text.isEmpty else { return }
+            self.items.append(Task(value: ["text": text]))
+            self.tableView.reloadData()
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func setupFirstTask() {
